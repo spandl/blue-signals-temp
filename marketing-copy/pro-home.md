@@ -1,20 +1,21 @@
 # Pro Home
 
-Page role: The main landing page for Teamfluence Pro. It should quickly communicate the content-to-lead cycle, build trust, and link to the 5 deeper site pages.
+Page role: The main landing page for teamfluence Pro. It should quickly communicate the content-to-lead cycle, build trust, and link to the 4 deeper site pages.
 
 ---
 
-## Make your content count
+## Turn LinkedIn content into qualified leads
 
-**Tag:** Teamfluence PRO – optimized for Content Marketers
+**Tag:** teamfluence Pro – built for content agencies
 
-**By-text (H2):**
-Generate leads from the content you create.  
-We listen to the signals your content creates, remove the noise, and deliver leads you can act on.
+**Subheading (H2):**
+AI-supported. Human-controlled.
+
+teamfluence finds people who engage with your content, helps you qualify them, and delivers leads you can act on.
 
 **Primary CTAs:**
-- See how this works
-- Pricing
+- See how this works → /pro-generation-cycle
+- Pricing → #pricing
 
 **Visual:** Product UI screenshot or short demo video
 
@@ -22,44 +23,37 @@ We listen to the signals your content creates, remove the noise, and deliver lea
 
 ## Three proof points
 
-### Start a conversation
+### Start and manage conversations
 
 **Copy:**
-Built-in workflows and automated campaigns bring the right leads into your unified teambox.  
-You can respond, qualify, and move them forward — all in one place.
+Use workflows to start conversations with your leads. The teambox keeps replies and follow-ups in one place, giving you more context to qualify each lead.
 
 **Visual/Icon:** [Icon or small illustration]
 
 **Note to designer:** body copy at least 14px
 
 **CTA:** Explore the teambox
-**Link to:** features#teambox
+**Link to:** /pro-features#teambox
 
-### AI supported, human managed
+### AI-supported, human-managed
 
 **Copy:**
-AI handles workflows, enrichment, and qualification.  
-You stay in control and approve every lead before it reaches your CRM.
+Automation workflows, sequencers and multiple AI tools help you qualify and enrich your leads. But you always remain in control, set the rules and decide what reaches your client's CRM.
 
 **Visual/Icon:** [Icon]
 
-**Note to designer:** body copy at least 14px
+**CTA:** Explore automations and AI features
+**Link to:** /pro-features#automations-and-ai-features
 
-**CTA:** Explore the lead funnel
-**Link to:** features#crm
-
-### Isolation & Safety
+### Clean neighbourhood
 
 **Copy:**
-We enforce strict usage policies and keep spammers out, so your profiles stay in a clean neighborhood.  
-Your accounts, data, and sessions are isolated — and we take LinkedIn's rules seriously.
+To come
 
 **Visual/Icon:** [Icon]
 
-**Note to designer:** body copy at least 14px
-
-**CTA:** See how we keep you safe
-**Link to:** features#safety
+**CTA:** Explore platform controls
+**Link to:** /pro-features#platform-features
 
 ---
 
@@ -69,33 +63,33 @@ Your accounts, data, and sessions are isolated — and we take LinkedIn's rules 
 
 ---
 
-## Built for agencies
+## Manage multiple clients from one place
 
 **Lead copy:**
-Agencies can run every client workspace in one place and give each client access to only the sections they need.
+teamfluence was built for agency and let’s you run every client in a separate workspace while managing the entire operation from one account. Apply your branding, control access, and see which workspaces need attention.
 
-- **White label:** Make it your service app.
-- **Multiple workspaces:** Manage multiple clients in one place.
-- **Fine-grained access:** Control what your team and your clients can see.
-- **Targets:** Define expectations and get alerted when they are not met, so you can act quickly.
+- **White label:** Present teamfluence as part of your service.
+- **Multiple workspaces:** Manage every client in one place.
+- **Fine-grained access:** Control what your team and clients can see and do.
+- **Targets:** Set clear expectations and see when a workspace needs attention.
 
 **Visual:** [Agency dashboard / workspace overview screenshot]
 
 **CTA:** See agency features
-**Link to:** /agencies
+**Link to:** /pro-agency
 
 ---
 
 ## Pricing
 
 **Lead copy:**
-One base plan for your agency. Add accounts as you grow.
+One base plan for your agency. Add accounts as your customers grow.
 
 **Billing switch:** Yearly / Quarterly (label: Billing period)
 
 **Pricing cards:**
 
-- **Teamfluence PRO** — €690 / month
+- **teamfluence Pro** — €690 / month
   - 25 accounts
   - Unlimited workspaces
   - 1,000 AI credits
@@ -104,7 +98,7 @@ One base plan for your agency. Add accounts as you grow.
   - including additional 1000 AI credits
 
 **CTA:** Contact Sales
-**Link to:** contact-sales
+**Link to:** /contact-sales
 
 **Visual:** [Pricing cards]
 
@@ -113,13 +107,13 @@ One base plan for your agency. Add accounts as you grow.
 ## Features
 
 **Lead copy:**
-A complete set of tools for the content-to-lead cycle.
+All the tools you need for the content-to-lead process.
 
-- **Automations and AI** — Workflows, outreach, and AI qualification that take manual work out of the funnel.
-- **CRM light** — A lightweight funnel with kanban, lists, and filters to manage leads.
-- **teambox** — One inbox for LinkedIn messages and conversations.
-- **Delivery** — Export leads to your CRM, Slack, files, or API.
-- **Platform features** — White label, workspaces, access control, targets, and onboarding.
+- **Automations and AI** — Use workflows, outreach, and AI qualification to reduce manual work.
+- **Lightweight CRM** — Manage leads in a flexible funnel with Kanban boards, lists, and filters.
+- **teambox** — Keep LinkedIn messages and conversations in one inbox.
+- **Delivery** — Send qualified leads to your CRM, Slack, files, or API.
+- **Additional platform features** — White label ready, multiple workspaces, fine-grained access, and more.
 
 **CTA:** See all features
 **Link to:** /pro-features
@@ -128,13 +122,13 @@ A complete set of tools for the content-to-lead cycle.
 
 ---
 
-## Starting off the right foot
+## Not just a tool, but a team behind you
 
 **Copy:**
-A tool is only as good as the person using it. We train you on the platform and actively help you set up your ICP profiles, workflows, and networking campaigns — until your process is working and delivering results.
+We want to make sure, you get the most out of teamfluence. That’s why we developed a stepped onboarding process, where we will help you setting up your first workspace, and configuring workflows and outreach campaigns. We will set you up for success.
 
 **CTA:** Review the onboarding process
-**Link to:** onboarding
+**Link to:** /pro-onboarding
 
 **Visual:** [Support / onboarding screenshot or team photo]
 
@@ -145,7 +139,7 @@ A tool is only as good as the person using it. We train you on the platform and 
 **Copy:**
 Once a week, Steven shares one thing he has learned about LinkedIn and AI — from our users and other sales leaders.
 
-One lesson. One learning. No fillers.
+One useful lesson. No filler.
 
 **CTA:** Sign up
 **Form:** [Email input + subscribe button]
@@ -154,10 +148,10 @@ One lesson. One learning. No fillers.
 
 ---
 
-## Ask AI about us
+## Ask an AI assistant about teamfluence
 
 **Copy:**
-Not sure if teamfluence is the right fit? Ask one of these AI chatbots:
+Not sure whether teamfluence fits your agency? Ask one of these AI assistants:
 
 **Widget / Link:** [4 icons with name as buttons]
 

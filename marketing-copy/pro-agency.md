@@ -4,10 +4,10 @@ Page role: The page that explains why teamfluence is built for agencies.
 
 ---
 
-## Built for agencies
+## One platform for every client
 
-**By-text (H2):**
-Agencies run multiple clients at once, each with different needs and workflows. That is why teamfluence is built as a white-label product with isolated workspaces and granular access.
+**Subheading (H2):**
+Run every client in a separate workspace while managing the entire operation from one account. Apply your branding, control access, and see which workspaces need attention.
 
 **Visual:** Product UI screenshot or short demo video
 
@@ -16,16 +16,16 @@ Agencies run multiple clients at once, each with different needs and workflows. 
 ## White label
 
 **Copy:**
-Make teamfluence your service app. Add your logo and domain name. Your clients see your brand, not ours.
+Present teamfluence as part of your service. Add your logo and domain name. Your clients see your brand, not ours.
 
 **Visual:** [UI mockup]
 
 ---
 
-## Isolated workspaces
+## Separate workspaces
 
 **Copy:**
-Run every client in its own workspace. You manage them all on one platform with one login. The overview screen lets you oversee every workspace at a glance.
+Give each client a separate workspace while managing them all with one login. The overview shows you which workspaces need attention.
 
 **Visual:** [UI mockup]
 
@@ -34,7 +34,7 @@ Run every client in its own workspace. You manage them all on one platform with 
 ## Fine-grained access
 
 **Copy:**
-Decide who on your team can manage which client and respond to messages. Control what your clients can see and do. Everyone gets access to the parts they need.
+Decide who on your team can manage each client and respond to messages. Control what clients can see and do. Everyone gets access to the parts they need.
 
 **Visual:** [UI mockup]
 
@@ -43,10 +43,12 @@ Decide who on your team can manage which client and respond to messages. Control
 ## Targets and process control
 
 **Copy:**
-Targets are not just motivation. They help you validate the process: enough content tracked, messages flowing, and workflows working. If something falls behind, you see it in one view — for all workspaces.
+Set targets for tracked content, leads, and key process steps. The overview shows you when a workspace falls behind, so your team knows where to act.
 
 **Visual:** [UI mockup]
 
 ---
 
 ## Contact Sales
+
+**Link to:** /contact-sales

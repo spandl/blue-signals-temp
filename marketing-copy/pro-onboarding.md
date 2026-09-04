@@ -4,47 +4,49 @@ Page role: Describes the onboarding process
 
 ---
 
-## Onboarding
+## Four guided sessions
 
-**By-text (H2):**
-A tool is only as good as the person using it. That's why we take onboarding and training seriously — four client sessions, from the first briefing to post-launch monitoring.
+**Subheading (H2):**
+We help you define your approach, train your team, configure the first workspace, and review the results after launch.
 
 ---
 
 ## Briefing
 
 **Copy:**
-Every client is different, with different industries and tools. In this first session, we get to know each other and create the implementation plan. That gives us the context to prepare the training and best-practice approach for your team.
+Every client works differently. In the first session, we learn about your agency, clients, and tools, then create an implementation plan. This gives us the context to prepare your training and setup.
 
 **Visual:** [1]
 
 ---
 
-## Training
+## Training and best practices
 
 **Copy:**
-We walk you through the product and share the best practices for your clients. That also gives you time to prepare the input we need for the workspace setup.
+We show your team how to use the product and apply it across clients. You also learn what information to prepare for the first workspace setup.
 
 **Visual:** [2]
 
 ---
 
-## Setting up the platform
+## Workspace setup
 
 **Copy:**
-Once we have everything we need, we set up the platform and configure the first workspace together. After this session, you know how to run teamfluence on your own.
+We configure the first workspace together, including ideal customer profiles, workflows, and campaigns. By the end of the session, your team has a clear process it can repeat for the next client.
 
 **Visual:** [3]
 
 ---
 
-## Monitoring
+## Post-launch review
 
 **Copy:**
-For the first few weeks after launch, we monitor the results and make sure everything runs well. After 4–6 weeks, we run a review session to make sure you are getting the best results from the platform.
+For the first few weeks after launch, we monitor the process with you. After 4–6 weeks, we meet to review the results, adjust the setup, and agree on the next steps.
 
 **Visual:** [4]
 
 ---
 
 ## Contact Sales
+
+**Link to:** /contact-sales

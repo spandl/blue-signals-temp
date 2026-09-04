@@ -6,32 +6,36 @@ Page role: The page shows all features on one page in five groupings
 
 ## Features
 
-**By-text (H2):**
-A complete list of the tools that turn LinkedIn signals into qualified leads.
+**Subheading (H2):**
+Tools to find, qualify, and deliver leads from content engagement.
 
 ---
 
 ## Automations and AI features
 
-- **Workflows** — Set up rules that tag, move, or export leads based on the signals they send.
+Turn relevant people into leads and move them forward with less manual work.
+
+- **Workflows** — Set rules that classify people, move leads through the funnel, or export qualified leads.
 - **Sequencer** — Schedule connection requests and messages in a sequence.
-- **Invites and outbound messaging** — Send connection requests and direct messages at scale.
-- **AI qualification** — Let AI score and qualify leads against your ICP.
-- **Target accounts / ABM** — Upload target account lists for focused outreach.
-- **Enrichment** — Add data to a lead's profile before you reach out.
-- **Content validation** — See which content produced the best leads and use that to decide what to track next.
+- **Invites and outbound messaging** — Send connection requests and direct messages through configured campaigns.
+- **AI qualification** — Use AI to compare leads with your ideal customer profiles.
+- **Target accounts / account-based marketing** — Upload target account lists for focused outreach.
+- **Enrichment** — Add useful data to a contact before you reach out.
+- **Content results** — See which content produced qualified leads and decide what to track next.
 
 **Visual:** [Icon]
 
 ---
 
-## CRM light
+## Lightweight CRM
+
+Keep leads organized before they are ready for your client's sales CRM.
 
 - **Customizable funnel** — Build funnel steps that match your process.
-- **Kanban and list view** — Move leads through stages or see them in a table.
+- **Kanban and list views** — Move leads through stages or see them in a table.
 - **Multiple views** — Save views for different roles and workflows.
-- **Filter and sorting** — Find the leads you need by any attribute.
-- **Manual and automated funnel steps** — Advance leads by hand or let a workflow do it.
+- **Filtering and sorting** — Find the leads you need by any attribute.
+- **Manual and automated funnel steps** — Move leads by hand or let a workflow do it.
 
 **Visual:** [Icon]
 
@@ -39,16 +43,20 @@ A complete list of the tools that turn LinkedIn signals into qualified leads.
 
 ## teambox
 
-- **One place for all messages** — Keep every LinkedIn conversation in one inbox.
-- **Multi-channel** — Reach leads through LinkedIn direct messages or email, so a failed DM does not stop the conversation.
-- **Signals start a conversation** — Set the signals that trigger an automated or manual reply.
-- **Manage messages on behalf of a team member** — Respond for your client without leaving the platform.
+Keep client conversations together and manage them as a team.
+
+- **One place for messages** — Keep LinkedIn conversations in one inbox.
+- **Multiple channels** — Continue a conversation through LinkedIn or email when one channel is not enough.
+- **Activity starts a conversation** — Set the activity that triggers an automated or manual reply.
+- **Manage client conversations** — Respond for your client without leaving the platform.
 
 **Visual:** [Icon]
 
 ---
 
 ## Delivery
+
+Send qualified leads to the people and systems that need them.
 
 - **MCP** — Connect your AI assistant directly to teamfluence.
 - **Slack** — Send leads and notifications to a Slack channel.
@@ -64,15 +72,19 @@ A complete list of the tools that turn LinkedIn signals into qualified leads.
 
 ## Platform features
 
-- **White label** — Add your logo and domain so the platform looks like yours.
-- **Isolated workspaces** — Keep each client separate while managing them from one account.
-- **Fine-grained access** — Control who can see and do what, including what clients can access.
-- **Targets** — Set goals and get alerts when a workspace falls behind.
+Run a consistent process across clients while keeping each workspace separate.
+
+- **White label** — Add your logo and domain so clients see your brand.
+- **Separate workspaces** — Keep each client in its own workspace while managing them from one account.
+- **Fine-grained access** — Control what your team and clients can see and do.
+- **Targets** — Set targets and see when a workspace needs attention.
 - **Onboarding and setup** — Get help configuring the platform for your first client.
-- **Compliance** — Follow LinkedIn's rules and keep your accounts safe.
+- **Responsible outreach** — Configure outreach around your policies and LinkedIn's rules.
 
 **Visual:** [Icon]
 
 ---
 
 ## Contact Sales
+
+**Link to:** /contact-sales
