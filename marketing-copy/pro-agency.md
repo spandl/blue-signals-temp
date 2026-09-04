@@ -1,67 +1,52 @@
 # Pro – Built for agencies
 
-Page role: The page that explains why teamfluence is optimal for agencies
+Page role: The page that explains why teamfluence is built for agencies.
 
 ---
 
-## Stack 1: Hero
-
-**Header (H1):** Built for agencies
+## Built for agencies
 
 **By-text (H2):**
-Agencies wear many hats and must manage multiple clients with different requirements. Teamfluencee has been working for years with agancies, that's why the product ships as a white label product using isolated workspaces for multiple clients
-
-
+Agencies run multiple clients at once, each with different needs and workflows. That is why teamfluence is built as a white-label product with isolated workspaces and granular access.
 
 **Visual:** Product UI screenshot or short demo video
 
 ---
 
-### White label
-
-**Header (H3):** White label
+## White label
 
 **Copy:**
-Make teamfluence your service app. Your logo, your domain name. And your clients don't need to know what software you are using.
+Make teamfluence your service app. Add your logo and domain name. Your clients see your brand, not ours.
 
 **Visual:** [UI mockup]
 
+---
 
-### Isolated workspaces
-
-**Header (H3):** Isolated workspaces
+## Isolated workspaces
 
 **Copy:**
-Manage all your clients on one platform using isolated workspaces, while having an overview of all workspaces in one single screen.
+Run every client in its own workspace. You manage them all on one platform with one login. The overview screen lets you oversee every workspace at a glance.
 
 **Visual:** [UI mockup]
 
+---
 
-### Fine grained access control
-
-**Header (H3):** Fine grained access control
+## Fine-grained access
 
 **Copy:**
-Who in you agency is managing which client, who can respond direct messages? What parts of the software will be managed by your clients? Should they be able to respond to their direct messages?
-
-All this can be controlled within teamfluence, so that everybody can focus on their tasks.
+Decide who on your team can manage which client and respond to messages. Control what your clients can see and do. Everyone gets access to the parts they need.
 
 **Visual:** [UI mockup]
 
+---
 
-### Targets and process control
+## Targets and process control
 
-**Header (H2):** Targets and process control
-
-**copy:**
-Defining targets is not just about motivation, it is even ore about validating the process. Make sure, there is enough content tracked, the outbound messages are flowing and workflows deliver.
-
-Setting these targets let yo easily validate if there is anything that needs adjustment. In one view, for all workspaces.
-
+**Copy:**
+Targets are not just motivation. They help you validate the process: enough content tracked, messages flowing, and workflows working. If something falls behind, you see it in one view — for all workspaces.
 
 **Visual:** [UI mockup]
 
+---
 
-### Contact Sales stack
-
-
+## Contact Sales

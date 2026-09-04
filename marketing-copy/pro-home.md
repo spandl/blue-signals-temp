@@ -4,11 +4,9 @@ Page role: The main landing page for Teamfluence Pro. It should quickly communic
 
 ---
 
-## Stack 1: Hero
+## Make your content count
 
 **Tag:** Teamfluence PRO – optimized for Content Marketers
-
-**Header (H1):** Make your content count
 
 **By-text (H2):**
 Generate leads from the content you create.  
@@ -22,11 +20,9 @@ We listen to the signals your content creates, remove the noise, and deliver lea
 
 ---
 
-## Stack 2: Three proof points
+## Three proof points
 
 ### Start a conversation
-
-**Header (H3):** Start a conversation
 
 **Copy:**
 Built-in workflows and automated campaigns bring the right leads into your unified teambox.  
@@ -41,8 +37,6 @@ You can respond, qualify, and move them forward — all in one place.
 
 ### AI supported, human managed
 
-**Header (H3):** AI supported, human managed
-
 **Copy:**
 AI handles workflows, enrichment, and qualification.  
 You stay in control and approve every lead before it reaches your CRM.
@@ -55,8 +49,6 @@ You stay in control and approve every lead before it reaches your CRM.
 **Link to:** features#crm
 
 ### Isolation & Safety
-
-**Header (H3):** Isolation & Safety
 
 **Copy:**
 We enforce strict usage policies and keep spammers out, so your profiles stay in a clean neighborhood.  
@@ -71,15 +63,13 @@ Your accounts, data, and sessions are isolated — and we take LinkedIn's rules 
 
 ---
 
-## Stack 3: Social proof — Company logos
+## Social proof — Company logos
 
 **Visual:** [Grid of customer / agency logos]
 
 ---
 
-## Stack 4: Optimized for agencies
-
-**Header (H2):** Built for agencies
+## Built for agencies
 
 **Lead copy:**
 Agencies can run every client workspace in one place and give each client access to only the sections they need.
@@ -96,9 +86,7 @@ Agencies can run every client workspace in one place and give each client access
 
 ---
 
-## Stack 5: Pricing
-
-**Header (H2):** Pricing
+## Pricing
 
 **Lead copy:**
 One base plan for your agency. Add accounts as you grow.
@@ -122,70 +110,28 @@ One base plan for your agency. Add accounts as you grow.
 
 ---
 
-## Stack 6: Full feature list by section
+## Features
 
-**Header (H2):** Features overview
+**Lead copy:**
+A complete set of tools for the content-to-lead cycle.
 
-**Lead copy:** On top of the flexible configurations, you will be mostly working with these features to control you lead funnel.
+- **Automations and AI** — Workflows, outreach, and AI qualification that take manual work out of the funnel.
+- **CRM light** — A lightweight funnel with kanban, lists, and filters to manage leads.
+- **teambox** — One inbox for LinkedIn messages and conversations.
+- **Delivery** — Export leads to your CRM, Slack, files, or API.
+- **Platform features** — White label, workspaces, access control, targets, and onboarding.
 
-**INSTRUCTIONS** We may just show the 5 top-level feature groups and link to the feature page.
-
-**Feature groups (H3s with links):**
-
-- Automations 
-    - Workflows
-    - Sequencer
-    - AI qualification
-    - automated invites
-    - outbound
-    - Enrichment
-    - Target accounts
-
-CTA: Find out more
-
-- CRM light
-    - Create your own funnel steps
-    - Advance leads with workflows or manually
-    - Filter and sort options
-    - Multiple views
-    - Board and list view
-
-CTA: Find out more
-
-- teambox
-    - Define which signals start a conversation
-    - Multi-channel
-    - Manage messages on behalf a team member
-    - Qualify leads within the teambox
-
-CTA: Find out more
-
-- Delivery ... export to
-    - Multiple file formats
-    - Hubspot
-    - Clay
-    - Slack
-    - API
-    - webhooks
-    - MCP
-
-CTA: Find out more
-
-- platform features
-
+**CTA:** See all features
+**Link to:** /pro-features
 
 **Visual:** [Responsive layout of 4 boxes with lists]
 
 ---
 
-## Stack 7: Onboarding & support
+## Starting off the right foot
 
-**Header (H2):** Starting off the right foot
-
-**Copy:** A tool is only as good as the person operating it. We want to make sure, you get the most out of teamfluence. 
-
-We will not only train you on the different tools, but we will activly help you to configure teamfluence, setup your ICP profiles, workflows and networking campaigns, until we are sure your processes work and deliver results.
-
+**Copy:**
+A tool is only as good as the person using it. We train you on the platform and actively help you set up your ICP profiles, workflows, and networking campaigns — until your process is working and delivering results.
 
 **CTA:** Review the onboarding process
 **Link to:** onboarding
@@ -194,34 +140,32 @@ We will not only train you on the different tools, but we will activly help you 
 
 ---
 
-## Stack 8: Newsletter
+## Learn from Steven, our founder
 
-**Header (H2):** Learn from Steven, our founder
-
-**Copy:** Once a week he writes up one thing he has learned about LinkedIn and AI, from our own users and from other sales leaders.
+**Copy:**
+Once a week, Steven shares one thing he has learned about LinkedIn and AI — from our users and other sales leaders.
 
 One lesson. One learning. No fillers.
 
-Sign up today
+**CTA:** Sign up
 **Form:** [Email input + subscribe button]
 
 **Visual:** [Author photo]
 
 ---
 
-## Stack 9: Ask AI about us
+## Ask AI about us
 
-**Header (H2):** Ask AI about us
-
-**Copy:** Still not sure, if teamfluence is the right fit? Ask one of these AI chatbots:
+**Copy:**
+Not sure if teamfluence is the right fit? Ask one of these AI chatbots:
 
 **Widget / Link:** [4 icons with name as buttons]
 
-**Visual:** [product icons are visuals]
+**Visual:** [Icons for the AI assistants]
 
 ---
 
-## Stack 10: Footer
+## Footer
 
 **Elements:**
 

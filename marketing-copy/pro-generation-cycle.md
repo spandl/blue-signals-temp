@@ -1,106 +1,92 @@
 # Pro – Life Cycle
 
-Page role: The page that explains the flow of the application in 6 simple steps
+Page role: The page that explains the lead generation flow in six steps
 
 ---
 
-## Stack 1: Hero
+## Generate leads from content you create
 
 **Tag:** Lead generation cycle
 
-**Header (H1):** Generate leads from content you create
-
 **By-text (H2):**
-Learn how any signal on LinkedIn can drive leads into your funnel. And it doesn't soley need to be based your content. You can also listen to posts and comments of infleuncers or posts using certain keywords. 
-
-
+Any signal on LinkedIn can become a lead — from your own content, from posts and comments by influencers, or from posts that use the keywords you track.
 
 **Visual:** Product UI screenshot or short demo video
 
 ---
 
-## Stack 2: Setup
-
-**Header (H3):** Plaform configuration
+## Setup
 
 **Copy:**
-This first step your knowledge about your industry, the ideal prospects you are looking for and criteria who will become a qualified lead is crucial. 
+The first step is about your industry, the prospects you want, and the criteria that make a lead qualified. This knowledge is crucial.
 
-We will bring in our knowledge about how to define "Ideal customer profiles" (IPC) in teamfluence, setting up workflows to classify leads or create connection and outreach campaigns.
-
-Together we will make sure that no step is left out, that the lead funnel matches your best practices and that you have a full understanding of how the teambox works. This crucial step is covered in our onboarding process and builds the foundation of successful operations.
+We help you define your ICPs in teamfluence and set up workflows to classify leads, or to create connection and outreach campaigns. Together we make sure no step is missing, the funnel matches your best practices, and you understand how the teambox works. This step is part of our onboarding and is the foundation for the rest.
 
 **Visual:** [UI mockup]
 
-**CTA:** Learn more about onboarding process
+**CTA:** Learn more about the onboarding process
 **Link to:** onboarding
 
-### Tracking content
+---
 
-**Header (H3):** Tracking content
+## Tracking content
 
 **Copy:**
-Once the platform configuration is finished, you simply select posts that your prospects will react on. Not just your posts, but content from anybody in your inductry
+Once the platform is configured, you select the posts your prospects will react to — not just your own, but content from anyone in your industry.
 
 **Visual:** [UI mockup]
 
-**CTA:** Learn more about onboarding process
-**Link to:** onboarding
 
-### Managing the pipeline
+---
 
-**Header (H3):** Managing the pipeline
+## Managing the pipeline
 
 **Copy:**
-Then you simply wait until, the leads drop into your pipeline and the automation processes move people forward in the funnel you created in the initial setup. At any time you can add notes, move cards manually or remove contacts.
+Then the leads drop into your pipeline, and the automations you set up move them forward through the funnel. You can add notes, move cards manually, or remove contacts at any time.
 
 **Visual:** [UI mockup]
 
 **CTA:** Learn more about the CRM light
 **Link to:** features/crm
 
+---
 
 ## Start a conversation
 
-**Header (H2):** Start a conversation
-
-**copy:**
-Starting a conversation is right in teamfluence can greatly improve the quality of your leads. This process can be automated, manual or a mix of both. Contacts that respond to connection requests or even a private message a good indicator for the lead quality.
-
+**Copy:**
+Starting a conversation inside teamfluence can improve the quality of your leads. This can be automated, manual, or a mix of both. A response to a connection request or a private message is a good indicator of lead quality.
 
 **Visual:** [UI mockup]
 
-**CTA:** Learn ore about the teambox
+**CTA:** Learn more about the teambox
 **Link to:** /teambox
 
 ---
 
 ## Deliver results
 
-**Header (H2):** Deliver results
-
-**copy:**
-Once all qualified leads have been validated, you can export them in a myriad of ways. Hubspot, Clay, Stack, maybe you want to add a webhook or use our API, maybe you simply want some static files. Everything is possible.
-
+**Copy:**
+Once a lead is qualified, you can export it in many ways: to HubSpot, Clay, Slack, a webhook, the API, or a simple file.
 
 **Visual:** [UI mockup]
 
-**CTA:** Learn ore about data export
+**CTA:** Learn more about data export
 **Link to:** features#results
 
 ---
 
 ## Learn from the results
 
-**Header (H2):** Learn from the results
+**Copy:**
+Most lead generation tools stop here: export the leads and start over. teamfluence also shows you which tracked content generated the most leads and which did not. Using the AI agent, you start to see patterns and suggestions for which topics or influencers to track next.
 
-**copy:**
-Most lead generation tools stop here. Export leads, start over. Teamfluence will also tell you which of the tracked content generated most leads and what content didn't. Using our AI agent, you will start seeing patterns and suggestions, what other topics or influencers are worth considering for your tracked content.
-
-Learn, improve, start over.
-
+Learn, improve, and start over.
 
 **Visual:** [UI mockup]
 
 **CTA:** Review all product features
 **Link to:** /features
+
+---
+
+## Contact Sales

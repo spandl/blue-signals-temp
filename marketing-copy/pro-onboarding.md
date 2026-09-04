@@ -4,55 +4,47 @@ Page role: Describes the onboarding process
 
 ---
 
-## Stack 1: Hero
-
-**Header (H1):** Onboarding
+## Onboarding
 
 **By-text (H2):**
-A tool is only as good as the person operating it. We want to make sure, you get the most out of teamfluence. 
+A tool is only as good as the person using it. That's why we take onboarding and training seriously — four client sessions, from the first briefing to post-launch monitoring.
 
-There a five simple steps in our onboarding process 
 ---
 
 ## Briefing
 
 **Copy:**
-Each of your clients is different, operates in different industries and is using different tools. This is why you need to brief as much as we need to train you on the platform.
-
-In this first step we learn to know each other and create the implementation plan. 
+Every client is different, with different industries and tools. In this first session, we get to know each other and create the implementation plan. That gives us the context to prepare the training and best-practice approach for your team.
 
 **Visual:** [1]
 
-
-## Best practices
-
-**Copy:**
-We share what we know works best. This second step is the theory and you learn about the why we do this the way we do it.
-
-**Visual:** [2]
+---
 
 ## Training
 
 **Copy:**
-Become the master of teamfluence. We step you through all product features. You will walk away with a to-do list, so the platform setup goes smoothly.
+We walk you through the product and share the best practices for your clients. That also gives you time to prepare the input we need for the workspace setup.
 
+**Visual:** [2]
 
-**Visual:** [3]
+---
 
 ## Setting up the platform
 
 **Copy:**
-We have everything we want on hand, time to setting up the platform and configure the first workspace. We do this together and after this session you will be a teamfluence hero!
+Once we have everything we need, we set up the platform and configure the first workspace together. After this session, you know how to run teamfluence on your own.
 
-**Visual:** [4]
+**Visual:** [3]
+
+---
 
 ## Monitoring
 
 **Copy:**
-During the first weeks, we will be monitoring the results and make sure everything runs fine. This usually results in a review session after 4-6 weeks to make sure you get the best results out of the platform.
+For the first few weeks after launch, we monitor the results and make sure everything runs well. After 4–6 weeks, we run a review session to make sure you are getting the best results from the platform.
 
-**Visual:** [5`3fvg bhnjm9]
+**Visual:** [4]
 
-### Contact Sales stack
+---
 
-
+## Contact Sales
