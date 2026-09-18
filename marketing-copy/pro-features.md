@@ -7,7 +7,7 @@ Page role: The page shows all features on one page in five groupings
 ## Features
 
 **Subheading (H2):**
-Tools to find, qualify, and deliver leads from content engagement.
+Explore the full list of features and tools included in teamfluence Pro. Contact us to book a demo today and see these features in action.
 
 ---
 

@@ -4,12 +4,12 @@ Page role: The page that explains the lead generation flow in six steps
 
 ---
 
-## Generate leads from content you create
+## Generate leads from the content you create
 
 **Tag:** Lead generation cycle
 
 **Subheading (H2):**
-Track content from your clients and their market. Find the people who engage, turn them into leads, and learn which content drives results.
+teamfluence finds people who engage with your content, helps you qualify them, and delivers leads you can act on.
 
 **Visual:** Product UI screenshot or short demo video
 
@@ -18,9 +18,9 @@ Track content from your clients and their market. Find the people who engage, tu
 ## Setup
 
 **Copy:**
-Start with your client's industry, the people they want to reach, and the criteria that make a lead qualified.
+Before you start, choose the influencers and keywords relevant to your industry. teamfluence uses them to suggest content you may want to track.
 
-We help you define ideal customer profiles in teamfluence and set up workflows to classify leads or run connection and outreach campaigns. Together, we align the funnel with your process and show your team how to use the teambox. This step is part of onboarding and prepares you for the rest of the cycle.
+You also define ideal customer profiles, build your qualification funnel, and set up workflows for classifying leads, sending connection requests, and running outreach campaigns. This may sound complex, so we cover it during onboarding and help you set it up properly.
 
 **Visual:** [UI mockup]
 
@@ -32,16 +32,16 @@ We help you define ideal customer profiles in teamfluence and set up workflows t
 ## Track content
 
 **Copy:**
-Choose the posts, creators, and keywords you want to follow — from your clients and from their market. When people engage, teamfluence adds them to your workspace. They become leads only when they enter your funnel.
+Select the posts you want to track, whether they come from your own team or industry influencers. When people engage with this content, teamfluence adds them to the first stage of your lead funnel.
 
 **Visual:** [UI mockup]
 
 ---
 
-## Manage the pipeline
+## Manage the funnel
 
 **Copy:**
-Workflows assess people against your criteria and turn the relevant ones into leads. You can add notes to a contact, move leads manually, or remove people at any time.
+Use workflows and AI tools to qualify people and move them through your lead funnel. You can add notes to a contact or move leads manually at any time.
 
 **Visual:** [UI mockup]
 
@@ -53,7 +53,7 @@ Workflows assess people against your criteria and turn the relevant ones into le
 ## Start a conversation
 
 **Copy:**
-A reply is a stronger sign of interest than a reaction. Send connection requests or messages manually or through a workflow, then manage the responses in the teambox.
+Use workflows to start conversations with your leads. The teambox keeps replies and follow-ups in one place, giving you more context to qualify each lead.
 
 **Visual:** [UI mockup]
 
@@ -65,7 +65,7 @@ A reply is a stronger sign of interest than a reaction. Send connection requests
 ## Deliver results
 
 **Copy:**
-Once a lead is qualified, send it to HubSpot, Clay, Slack, a webhook, the API, or a file.
+Choose how you deliver qualified leads to your clients. Send them to HubSpot, Clay, or Slack; download a spreadsheet; or connect your own systems through the API or webhooks.
 
 **Visual:** [UI mockup]
 
@@ -77,7 +77,7 @@ Once a lead is qualified, send it to HubSpot, Clay, Slack, a webhook, the API, o
 ## Learn from the results
 
 **Copy:**
-See which tracked content produced qualified leads — not only reactions. Use those results to decide what to create and track next.
+teamfluence shows you which content produced the most promising leads. Use those results to guide what you create and track next.
 
 Learn, improve, and start again.
 

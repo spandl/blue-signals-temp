@@ -35,10 +35,10 @@ Use workflows to start conversations with your leads. The teambox keeps replies 
 **CTA:** Explore the teambox
 **Link to:** /pro-features#teambox
 
-### AI-supported, human-managed
+### AI-supported, human-controlled
 
 **Copy:**
-Automation workflows, sequencers and multiple AI tools help you qualify and enrich your leads. But you always remain in control, set the rules and decide what reaches your client's CRM.
+Use workflows, sequencers, and AI tools to qualify and enrich your leads. You stay in control: set the rules and decide what reaches your client's CRM.
 
 **Visual/Icon:** [Icon]
 
@@ -66,7 +66,7 @@ To come
 ## Manage multiple clients from one place
 
 **Lead copy:**
-teamfluence was built for agency and let’s you run every client in a separate workspace while managing the entire operation from one account. Apply your branding, control access, and see which workspaces need attention.
+teamfluence is built for agencies. Run every client in a separate workspace while managing the entire operation from one account. Apply your branding, control access, and see which workspaces need attention.
 
 - **White label:** Present teamfluence as part of your service.
 - **Multiple workspaces:** Manage every client in one place.
@@ -83,7 +83,7 @@ teamfluence was built for agency and let’s you run every client in a separate 
 ## Pricing
 
 **Lead copy:**
-One base plan for your agency. Add accounts as your customers grow.
+One base plan for your agency. Add accounts as your client base grows.
 
 **Billing switch:** Yearly / Quarterly (label: Billing period)
 
@@ -95,7 +95,7 @@ One base plan for your agency. Add accounts as your customers grow.
   - 1,000 AI credits
 
 - **25 additional accounts** — €490 / month
-  - including additional 1000 AI credits
+  - Includes 1,000 additional AI credits
 
 **CTA:** Contact Sales
 **Link to:** /contact-sales
@@ -113,7 +113,7 @@ All the tools you need for the content-to-lead process.
 - **Lightweight CRM** — Manage leads in a flexible funnel with Kanban boards, lists, and filters.
 - **teambox** — Keep LinkedIn messages and conversations in one inbox.
 - **Delivery** — Send qualified leads to your CRM, Slack, files, or API.
-- **Additional platform features** — White label ready, multiple workspaces, fine-grained access, and more.
+- **Additional platform features** — White-label branding, multiple workspaces, and fine-grained access.
 
 **CTA:** See all features
 **Link to:** /pro-features
@@ -122,10 +122,10 @@ All the tools you need for the content-to-lead process.
 
 ---
 
-## Not just a tool, but a team behind you
+## Not just a tool — a team behind you
 
 **Copy:**
-We want to make sure, you get the most out of teamfluence. That’s why we developed a stepped onboarding process, where we will help you setting up your first workspace, and configuring workflows and outreach campaigns. We will set you up for success.
+We want you to get the most from teamfluence. Through step-by-step onboarding, we help you set up your first workspace and configure workflows and outreach campaigns. You start with a working process and a team to support you.
 
 **CTA:** Review the onboarding process
 **Link to:** /pro-onboarding

@@ -4,7 +4,7 @@ Page role: The page that explains why teamfluence is built for agencies.
 
 ---
 
-## One platform for every client
+## very clientOne platform for e
 
 **Subheading (H2):**
 Run every client in a separate workspace while managing the entire operation from one account. Apply your branding, control access, and see which workspaces need attention.
