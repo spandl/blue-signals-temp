@@ -25,6 +25,7 @@ body { min-height: 100vh; background: #fff; }
 }
 
 .water-hero__canvas,
+.water-hero__movement,
 .water-hero__wash {
   position: absolute;
   inset: 0;
@@ -33,6 +34,40 @@ body { min-height: 100vh; background: #fff; }
 }
 
 .water-hero__canvas { display: block; }
+
+.water-hero__movement {
+  z-index: 0;
+  display: none;
+  overflow: hidden;
+  background: transparent;
+}
+
+.water-hero__movement > div,
+.water-hero__movement .observablehq,
+.water-hero__movement .observablehq > div,
+.water-hero__movement canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.water-hero__movement canvas {
+  display: block;
+  object-fit: cover;
+  filter: url('#cyan-wake');
+}
+
+.water-hero__movement[data-composite='opaque'] { background: #fff; }
+.water-hero__movement[data-composite='multiply'] canvas { mix-blend-mode: multiply; }
+.water-hero__movement[data-composite='darken'] canvas { mix-blend-mode: darken; }
+.water-hero__movement[data-composite='color-burn'] canvas { mix-blend-mode: color-burn; }
+
+.water-hero__movement .duck { display: none; }
+
+.color-filters {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
 
 .water-hero__wash {
   pointer-events: none;
@@ -126,6 +161,53 @@ h1 {
   display: grid;
   grid-template-columns: repeat(5, minmax(120px, 1fr));
   gap: 14px 22px;
+}
+
+.water-controls [hidden] { display: none; }
+
+.water-controls__group-title {
+  grid-column: 1 / -1;
+  padding-top: 2px;
+  color: #67a5b5;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.water-controls__movement-options {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: end;
+  gap: 18px;
+}
+
+.water-controls__grid .water-controls__movement-options .water-controls__check {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-bottom: 7px;
+}
+
+.water-controls__movement-options .water-controls__check input {
+  width: auto;
+  margin: 0;
+}
+
+.water-controls__grid .water-controls__movement-options .water-controls__composite,
+.water-controls__grid .water-controls__movement-options .water-controls__color {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3px;
+}
+
+.water-controls__movement-options input[type='color'] {
+  width: 52px;
+  height: 30px;
+  padding: 2px;
+  background: #fff;
+  border: 1px solid #d2f0f5;
+  border-radius: 7px;
 }
 
 .water-controls__grid label {

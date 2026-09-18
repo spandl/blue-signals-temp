@@ -28,10 +28,10 @@ const presets = {
   },
   'Ralph study 02': {
     damping: .99,
-    dropStrength: .15,
-    dropRadius: .02,
+    dropStrength: .35,
+    dropRadius: .01,
     dropIntervalMin: 1,
-    dropIntervalMax: 5,
+    dropIntervalMax: 7,
     pointerStrength: .05,
     baseTint: .04,
     depthTint: .15,
@@ -39,6 +39,48 @@ const presets = {
     highlight: 30
   }
 };
+
+const movementPresets = {
+  'Observable base': {
+    wakeDepth: 50,
+    wakeGravity: .5,
+    wakeSourceSpeed: .93,
+    wakeInputStrength: 15,
+    wakeTimeStep: 1.88,
+    wakeHalfLife: 103,
+    wakeResolution: 256,
+    wakeSourceSize: .009,
+    wakeMouseCutoff: 40,
+    wakeColor: '#06b6d4',
+    wakeOpacity: 1
+  },
+  'Ralph pointer 01': {
+    wakeDepth: 23.71,
+    wakeGravity: .5,
+    wakeSourceSpeed: .78,
+    wakeInputStrength: 5.1,
+    wakeTimeStep: 1.14,
+    wakeHalfLife: 200,
+    wakeResolution: 256,
+    wakeSourceSize: .012,
+    wakeMouseCutoff: 40,
+    wakeColor: '#06b6d4',
+    wakeOpacity: .65
+  }
+};
+
+const movementControls = [
+  ['wakeDepth', 'Depth, h', .01, 50, .01],
+  ['wakeGravity', 'Gravity, g', .5, 100, .1],
+  ['wakeSourceSpeed', 'Speed', .5, 2, .01],
+  ['wakeInputStrength', 'Input strength', 0, 20, .1],
+  ['wakeTimeStep', 'Time step, Δt', .01, 10, .01],
+  ['wakeHalfLife', 'Damping half-life', 1, 200, 1],
+  ['wakeResolution', 'Resolution', 128, 512, 128],
+  ['wakeSourceSize', 'Source size', .004, .03, .001],
+  ['wakeOpacity', 'Overlay opacity', 0, 1, .01],
+  ['wakeMouseCutoff', 'Mouse speed cutoff', 0, 500, 5, ' px/s']
+];
 
 const controls = [
   ['damping', 'Decay', .96, .999, .001],
@@ -57,10 +99,16 @@ panel.innerHTML = `
   <div class="water-controls__heading">
     <div><span>Water study</span><strong>Live parameters</strong></div>
     <div class="water-controls__actions">
+      <label class="water-controls__preset">Pointer
+        <select data-control="pointer-mode" aria-label="Pointer variant">
+          <option value="drops">Drops</option>
+          <option value="movement">Movement</option>
+        </select>
+      </label>
       <label class="water-controls__preset">Preset
-        <select aria-label="Water preset">
+        <select data-control="preset" aria-label="Water preset">
           <option value="Original study">Original study</option>
-          <option value="Ralph study 01" selected>Ralph study 01</option>
+          <option value="Ralph study 01">Ralph study 01</option>
           <option value="Ralph study 02" selected>Ralph study 02</option>
         </select>
       </label>
@@ -131,6 +179,99 @@ for (const [key, label, min, max, step, suffix = ''] of controls) {
   fields.set(key, { input, value, suffix });
 }
 
+const movementHeading = document.createElement('div');
+movementHeading.className = 'water-controls__group-title';
+movementHeading.textContent = 'Movement wake';
+grid.append(movementHeading);
+
+const movementOptions = document.createElement('div');
+movementOptions.className = 'water-controls__movement water-controls__movement-options';
+movementOptions.innerHTML = `
+  <label class="water-controls__check">
+    <input type="checkbox" data-control="auto-movement" />
+    Simulate movement
+  </label>
+  <label class="water-controls__composite">Pointer preset
+    <select data-control="movement-preset" aria-label="Movement preset">
+      <option value="Observable base">Observable base</option>
+      <option value="Ralph pointer 01" selected>Ralph pointer 01</option>
+    </select>
+  </label>
+  <label class="water-controls__composite">Merge with drops
+    <select data-control="composite" aria-label="Merge movement with drops">
+      <option value="opaque">None · opaque</option>
+      <option value="transparency">Transparency</option>
+      <option value="multiply">Multiply</option>
+      <option value="darken">Darken</option>
+      <option value="color-burn">Color burn</option>
+    </select>
+  </label>
+  <label class="water-controls__color">Overlay color
+    <input type="color" data-control="movement-color" value="#06b6d4" />
+  </label>
+`;
+grid.append(movementOptions);
+
+const autoMovement = movementOptions.querySelector('[data-control="auto-movement"]');
+const movementPreset = movementOptions.querySelector('[data-control="movement-preset"]');
+const composite = movementOptions.querySelector('[data-control="composite"]');
+const movementColor = movementOptions.querySelector('[data-control="movement-color"]');
+autoMovement.checked = water.settings.wakeAutoInput;
+composite.value = water.settings.wakeComposite;
+movementColor.value = water.settings.wakeColor;
+autoMovement.addEventListener('change', () => {
+  water.settings.wakeAutoInput = autoMovement.checked;
+  window.blueSignalsMovement.reset();
+});
+composite.addEventListener('change', () => {
+  water.settings.wakeComposite = composite.value;
+});
+movementColor.addEventListener('input', () => {
+  water.settings.wakeColor = movementColor.value;
+});
+
+for (const [key, label, min, max, step, suffix = ''] of movementControls) {
+  const field = document.createElement('label');
+  const value = document.createElement('output');
+  const input = document.createElement('input');
+  field.className = 'water-controls__movement';
+  value.value = `${water.settings[key]}${suffix}`;
+  input.type = 'range';
+  input.min = min;
+  input.max = max;
+  input.step = step;
+  input.value = water.settings[key];
+  input.addEventListener('input', () => {
+    water.settings[key] = Number(input.value);
+    value.value = `${input.value}${suffix}`;
+    if (key === 'wakeResolution') water.rebuild();
+  });
+  field.append(document.createTextNode(label), value, input);
+  grid.append(field);
+  fields.set(key, { input, value, suffix });
+}
+
+function restoreMovementPreset(name) {
+  Object.assign(water.settings, movementPresets[name]);
+  for (const [key, setting] of Object.entries(movementPresets[name])) {
+    const field = fields.get(key);
+    if (field) {
+      field.input.value = setting;
+      field.value.value = `${setting}${field.suffix}`;
+    }
+  }
+  movementColor.value = water.settings.wakeColor;
+  window.blueSignalsMovement.reset();
+}
+
+movementPreset.addEventListener('change', () => restoreMovementPreset(movementPreset.value));
+
+function updatePointerControls() {
+  const movement = water.settings.pointerMode === 'movement';
+  movementHeading.hidden = !movement;
+  for (const field of grid.querySelectorAll('.water-controls__movement')) field.hidden = !movement;
+}
+
 function restorePreset(name) {
   Object.assign(water.settings, presets[name]);
   for (const [key, { input, value, suffix }] of fields) {
@@ -140,14 +281,28 @@ function restorePreset(name) {
   updateInterval();
 }
 
-panel.querySelector('select').addEventListener('change', event => {
+panel.querySelector('[data-control="preset"]').addEventListener('change', event => {
   restorePreset(event.target.value);
 });
+
+panel.querySelector('[data-control="pointer-mode"]').addEventListener('change', event => {
+  water.settings.pointerMode = event.target.value;
+  water.rebuild();
+  window.blueSignalsMovement.reset();
+  updatePointerControls();
+});
+
+restorePreset(panel.querySelector('[data-control="preset"]').value);
+restoreMovementPreset(movementPreset.value);
+updatePointerControls();
 
 panel.addEventListener('click', event => {
   const action = event.target.closest('button')?.dataset.action;
   if (action === 'drop') water.drop();
-  if (action === 'reset') water.reset();
+  if (action === 'reset') {
+    water.reset();
+    window.blueSignalsMovement.reset();
+  }
 });
 
 mount.append(panel);

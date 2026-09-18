@@ -27,7 +27,21 @@ const settings = {
   dropRadius: .009,
   dropIntervalMin: 3,
   dropIntervalMax: 8,
+  pointerMode: 'drops',
   pointerStrength: .05,
+  wakeAutoInput: false,
+  wakeComposite: 'opaque',
+  wakeColor: '#06b6d4',
+  wakeOpacity: 1,
+  wakeMouseCutoff: 40,
+  wakeDepth: 50,
+  wakeGravity: .5,
+  wakeSourceSpeed: .93,
+  wakeInputStrength: 15,
+  wakeTimeStep: 1.88,
+  wakeHalfLife: 103,
+  wakeResolution: 256,
+  wakeSourceSize: .009,
   baseTint: .035,
   depthTint: .12,
   waveContrast: 1,
@@ -74,11 +88,14 @@ function disturb(x, y, radius, strength) {
 
 function step() {
   const next = previous;
+  const coupling = .5;
+  const damping = settings.damping;
   for (let row = 1; row < rows - 1; row += 1) {
     const rowOffset = row * columns;
     for (let column = 1; column < columns - 1; column += 1) {
       const index = rowOffset + column;
-      next[index] = ((current[index - 1] + current[index + 1] + current[index - columns] + current[index + columns]) * .5 - previous[index]) * settings.damping;
+      const laplacian = current[index - 1] + current[index + 1] + current[index - columns] + current[index + columns] - current[index] * 4;
+      next[index] = (current[index] * 2 - previous[index] + laplacian * coupling) * damping;
     }
   }
   previous = current;
@@ -86,6 +103,7 @@ function step() {
 }
 
 function render() {
+  if (!image || !current || !previous) return;
   const pixels = image.data;
   for (let row = 0; row < rows; row += 1) {
     const vertical = row / Math.max(1, rows - 1);
@@ -98,7 +116,8 @@ function render() {
       const down = current[index + (row < rows - 1 ? columns : 0)];
       const slopeX = right - left;
       const slopeY = down - up;
-      const energy = Math.min(.4, (Math.abs(current[index]) * .14 + Math.hypot(slopeX, slopeY) * 1.8) * settings.waveContrast);
+      const amplitude = Math.abs(current[index]) * .14;
+      const energy = Math.min(.4, (amplitude + Math.hypot(slopeX, slopeY) * 1.8) * settings.waveContrast);
       const directional = Math.max(-.14, Math.min(.14, (slopeX - slopeY) * .28 * settings.waveContrast));
       const tint = Math.max(.005, settings.baseTint + vertical * settings.depthTint + energy + directional);
       const light = Math.max(0, -current[index]) * settings.highlight;
@@ -117,6 +136,7 @@ function animate(time) {
   requestAnimationFrame(animate);
   if (document.hidden || time - lastFrame < frameInterval) return;
   lastFrame = time;
+  if (!image || !current || !previous) return;
 
   if (!reducedMotion.matches) {
     if (time > nextDrop) {
@@ -139,7 +159,7 @@ function handlePointer(event) {
   const distance = Math.hypot(x - pointerX, y - pointerY);
   const now = performance.now();
 
-  if (!reducedMotion.matches && pointerX >= 0 && distance > .006 && now - lastPointerDrop > 55) {
+  if (!reducedMotion.matches && pointerX >= 0 && settings.pointerMode === 'drops' && distance > .006 && now - lastPointerDrop > 55) {
     disturb(x, y, settings.dropRadius * .82 + Math.min(distance, .028), Math.min(settings.pointerStrength * 1.3, settings.pointerStrength * .44 + distance * 5));
     lastPointerDrop = now;
   }
@@ -153,9 +173,10 @@ window.blueSignalsWater = {
     disturb(.1 + Math.random() * .8, .1 + Math.random() * .7, settings.dropRadius, settings.dropStrength);
   },
   reset() {
-    current.fill(0);
-    previous.fill(0);
-  }
+    current?.fill(0);
+    previous?.fill(0);
+  },
+  rebuild: resize
 };
 
 canvas.addEventListener('pointermove', handlePointer, { passive: true });
