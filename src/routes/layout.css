@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@theme {
+	/* Brand colors (Figma: Blue Signals variables) */
+	--color-brand: #0072b1;
+	--color-cyan: #02b6ce;
+	--color-cyan-75: rgb(2 182 206 / 0.75);
+	--color-teal: #0f6074;
+	--color-teal-deep: #025a70;
+	--color-muted: #61787a;
+	--color-secondary: #ccd4d6;
+	--color-ink: #333647;
+	--color-offwhite: #f9f9f9;
+
+	/* Typography — SUSE */
+	--font-sans: 'SUSE', ui-sans-serif, system-ui, sans-serif;
+
+	/* Type scale from Figma text styles */
+	--text-hero: 5.45rem; /* logo wordmark ~87px */
+	--text-h2: 4rem; /* heading/h2 64 */
+	--text-circle: 2.625rem; /* heading/circle 42 */
+	--text-lead: 2.625rem; /* intro paragraph 42 */
+	--text-byline: 2rem; /* heading/by-line 32 */
+	--text-body: 1.75rem; /* paragraph/normal 28 */
+	--leading-copy: 1.3;
+
+	/* Content column */
+	--container-content: 75rem; /* 1200px */
+}
+
+/* Figma text styles */
+@utility heading-h2 {
+	font-family: var(--font-sans);
+	font-weight: 600;
+	font-size: 4rem;
+	color: var(--color-teal-deep);
+}
+
+@utility heading-byline {
+	font-family: var(--font-sans);
+	font-weight: 500;
+	font-size: 2rem;
+	color: var(--color-teal-deep);
+}
+
+@utility heading-circle {
+	font-family: var(--font-sans);
+	font-weight: 600;
+	font-size: 2.625rem;
+	color: var(--color-offwhite);
+	text-align: center;
+}
+
+@utility paragraph-normal {
+	font-family: var(--font-sans);
+	font-weight: 300;
+	font-size: 1.75rem;
+	line-height: 1.3;
+	color: var(--color-muted);
+}
