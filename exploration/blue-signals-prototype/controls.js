@@ -37,6 +37,18 @@ const presets = {
     depthTint: .15,
     waveContrast: 0.75,
     highlight: 30
+  },
+  'Web cover': {
+    damping: .995,
+    dropStrength: .4,
+    dropRadius: .01,
+    dropIntervalMin: 1,
+    dropIntervalMax: 8,
+    pointerStrength: .35,
+    baseTint: .04,
+    depthTint: .2,
+    waveContrast: .7,
+    highlight: 30
   }
 };
 
@@ -66,13 +78,28 @@ const movementPresets = {
     wakeMouseCutoff: 40,
     wakeColor: '#06b6d4',
     wakeOpacity: .65
+  },
+  'Web cover': {
+    wakeAutoInput: true,
+    wakeComposite: 'transparency',
+    wakeDepth: 49.71,
+    wakeGravity: .5,
+    wakeSourceSpeed: .3,
+    wakeInputStrength: 10.2,
+    wakeTimeStep: 1.05,
+    wakeHalfLife: 151,
+    wakeResolution: 512,
+    wakeSourceSize: .021,
+    wakeMouseCutoff: 180,
+    wakeColor: '#009bb5',
+    wakeOpacity: .29
   }
 };
 
 const movementControls = [
   ['wakeDepth', 'Depth, h', .01, 50, .01],
   ['wakeGravity', 'Gravity, g', .5, 100, .1],
-  ['wakeSourceSpeed', 'Speed', .5, 2, .01],
+  ['wakeSourceSpeed', 'Speed', .25, 1, .01],
   ['wakeInputStrength', 'Input strength', 0, 20, .1],
   ['wakeTimeStep', 'Time step, Δt', .01, 10, .01],
   ['wakeHalfLife', 'Damping half-life', 1, 200, 1],
@@ -102,14 +129,15 @@ panel.innerHTML = `
       <label class="water-controls__preset">Pointer
         <select data-control="pointer-mode" aria-label="Pointer variant">
           <option value="drops">Drops</option>
-          <option value="movement">Movement</option>
+          <option value="movement" selected>Movement</option>
         </select>
       </label>
       <label class="water-controls__preset">Preset
         <select data-control="preset" aria-label="Water preset">
           <option value="Original study">Original study</option>
           <option value="Ralph study 01">Ralph study 01</option>
-          <option value="Ralph study 02" selected>Ralph study 02</option>
+          <option value="Ralph study 02">Ralph study 02</option>
+          <option value="Web cover" selected>Web cover</option>
         </select>
       </label>
       <button type="button" data-action="drop">Add drop</button>
@@ -194,7 +222,8 @@ movementOptions.innerHTML = `
   <label class="water-controls__composite">Pointer preset
     <select data-control="movement-preset" aria-label="Movement preset">
       <option value="Observable base">Observable base</option>
-      <option value="Ralph pointer 01" selected>Ralph pointer 01</option>
+      <option value="Ralph pointer 01">Ralph pointer 01</option>
+      <option value="Web cover" selected>Web cover</option>
     </select>
   </label>
   <label class="water-controls__composite">Merge with drops
@@ -260,6 +289,8 @@ function restoreMovementPreset(name) {
       field.value.value = `${setting}${field.suffix}`;
     }
   }
+  autoMovement.checked = water.settings.wakeAutoInput;
+  composite.value = water.settings.wakeComposite;
   movementColor.value = water.settings.wakeColor;
   window.blueSignalsMovement.reset();
 }

@@ -6,6 +6,8 @@ let notebook;
 let restartToken = 0;
 let lastSettings = '';
 let loadError;
+let resizeTimer;
+let resizeQueue = Promise.resolve();
 
 function updateAppearance() {
   const color = water.settings.wakeColor.replace('#', '');
@@ -51,6 +53,16 @@ async function resizeNotebook() {
   await notebook.redefine('attachMouseInput', [], () => attachThresholdInput(container));
 }
 
+function scheduleResize() {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    resizeQueue = resizeQueue.then(resizeNotebook).catch(error => {
+      loadError = error;
+      console.error(error);
+    });
+  }, 120);
+}
+
 function attachThresholdInput(container) {
   return function attachMouseInput() {
     const queue = [];
@@ -94,6 +106,23 @@ function attachThresholdInput(container) {
   };
 }
 
+function automatedPosition() {
+  return function autoInputPosition(time) {
+    const canvas = mount.querySelector('canvas');
+    const width = canvas?.width || hero.clientWidth;
+    const height = canvas?.height || hero.clientHeight;
+    const t = time * water.settings.wakeSourceSpeed;
+    const xExcursion = Math.max(0, Math.sin(t * .19 + .7)) ** 8;
+    const yExcursion = Math.max(0, Math.sin(t * .17 + 2.4)) ** 8;
+    const xAmplitude = .42 + .36 * xExcursion;
+    const yAmplitude = .42 + .36 * yExcursion;
+    return [
+      width * (.5 + xAmplitude * Math.cos(.5 * (t + .3 * Math.cos(t * Math.sqrt(2))))),
+      height * (.5 + yAmplitude * Math.sin(Math.E * .4 * (t + .3 * Math.sin(t))))
+    ];
+  };
+}
+
 async function initialize() {
   try {
     const [{ Runtime, Inspector }, { default: define }] = await Promise.all([
@@ -119,6 +148,7 @@ async function initialize() {
       notebook.redefine('power', 'power (squared amplitude)'),
       notebook.redefine('run', true),
       notebook.redefine('drawWakeAngle', false),
+      notebook.redefine('autoInputPosition', [], automatedPosition),
       notebook.redefine('restart', restartToken),
       resizeNotebook(),
       applySettings(true)
@@ -149,7 +179,7 @@ window.blueSignalsMovement = {
   resize: resizeNotebook
 };
 
-new ResizeObserver(() => resizeNotebook()).observe(hero);
+new ResizeObserver(scheduleResize).observe(hero);
 initialize();
 requestAnimationFrame(update);
 window.addEventListener('pagehide', () => runtime?.dispose());
