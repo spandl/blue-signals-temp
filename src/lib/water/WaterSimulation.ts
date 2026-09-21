@@ -8,6 +8,8 @@ export interface WaterSettings {
 	/** seconds between autonomous drops */
 	dropIntervalMin: number;
 	dropIntervalMax: number;
+	/** 'drops': pointer injects ripples · 'movement': wake layer handles pointer */
+	pointerMode: 'drops' | 'movement';
 	/** pointer drop force (pointerMode 'drops') */
 	pointerStrength: number;
 	/** baseline cyan tint (0.005–0.12) */
@@ -27,6 +29,7 @@ export const DEFAULT_SETTINGS: WaterSettings = {
 	dropRadius: 0.01,
 	dropIntervalMin: 1,
 	dropIntervalMax: 7,
+	pointerMode: 'movement',
 	pointerStrength: 0.05,
 	baseTint: 0.04,
 	depthTint: 0.15,
@@ -237,6 +240,7 @@ export class WaterSimulation {
 
 		if (
 			!this.reducedMotion.matches &&
+			this.settings.pointerMode === 'drops' &&
 			this.pointerX >= 0 &&
 			distance > 0.006 &&
 			now - this.lastPointerDrop > 55

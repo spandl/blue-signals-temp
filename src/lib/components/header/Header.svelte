@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import WaterCanvas from '$lib/water/WaterCanvas.svelte';
+	import WakeCanvas from '$lib/wake/WakeCanvas.svelte';
 	import menuIcon from '$lib/assets/menu.svg?raw';
 
 	let { children }: { children?: Snippet } = $props();
@@ -8,6 +9,7 @@
 
 <header class="relative h-[70vh] max-h-[960px] min-h-[420px] w-full overflow-hidden">
 	<WaterCanvas class="absolute inset-0 h-full w-full" />
+	<WakeCanvas class="absolute inset-0 h-full w-full" />
 
 	<button
 		type="button"
