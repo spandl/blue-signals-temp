@@ -9,7 +9,8 @@
 		component: ContentSection,
 		argTypes: {
 			headline: { control: 'text' },
-			ctas: { control: 'object' }
+			ctas: { control: 'object' },
+			scrollReveal: { control: 'boolean' }
 		},
 		args: {
 			headline: 'Generate leads in five steps',

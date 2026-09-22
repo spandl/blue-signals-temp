@@ -12,7 +12,7 @@
 		args: {
 			ctas: [
 				{ label: 'Book a demo', href: '#', variant: 'primary' },
-				{ label: 'Book a demo', href: '#', variant: 'secondary' }
+				{ label: 'Pricing', href: '#', variant: 'secondary' }
 			]
 		}
 	});

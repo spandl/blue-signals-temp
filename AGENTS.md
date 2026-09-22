@@ -1,4 +1,4 @@
-# Teamfluence marketing site
+# Blue Signals marketing site
 
 SvelteKit (TypeScript) + Tailwind CSS v4, `adapter-static` + `prerender`. App lives in `src/`.
 
@@ -19,3 +19,22 @@ SvelteKit (TypeScript) + Tailwind CSS v4, `adapter-static` + `prerender`. App li
 
 - `planning/` — marketing copy and product docs (source of truth for copy).
 - `exploration/` — prototypes; do not modify.
+
+## Next steps (planned)
+
+- Animate the content stacks (ContentSection/main visual + FeatureRow — bubble scrolls in centered, then slides to its side revealing copy; `FeatureRow.svelte` already has `.bubble` wrapper as transform target)
+- Breakpoint layouts (Figma is 1680px desktop-only)
+- Finalize footer (design + implementation — currently a teal stub)
+- Contact sales CTA (design + implementation)
+- Deploy to GitHub + Vercel for preview
+- Menu: figure out behavior/look (design + implementation — button is a stub in `Header.svelte`)
+
+## Component map (Storybook = source of truth)
+
+- `Header/*` — Header (water + wake canvases, menu button, slotted overlay), Logo, LogoTagline, WaterCanvas
+- `Components/*` — Button (primary/secondary CTA), Logo
+- `Content/*` — Intro, ContentSection, FeatureRow
+- `Layout/*` — Footer
+- `Pages/Home` — full page assembly
+- `src/lib/wake/WakeSimulation.ts` — local regl port of the Observable dispersion notebook; `src/lib/water/WaterSimulation.ts` — canvas-2D drops sim
+- New story files need a Storybook restart to be indexed

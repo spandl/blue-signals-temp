@@ -26,7 +26,7 @@
 				<Intro
 					ctas={[
 						{ label: 'Book a demo', href: '#', variant: 'primary' },
-						{ label: 'Book a demo', href: '#', variant: 'secondary' }
+						{ label: 'Pricing', href: '#', variant: 'secondary' }
 					]}
 				>
 					Professional networks are an ocean of people. Finding qualified leads in that ocean
@@ -35,8 +35,9 @@
 					deliver leads you can act on.
 				</Intro>
 			</Container>
-			<Container class="mt-48">
+			<Container>
 				<ContentSection
+					scrollReveal
 					headline="Generate leads in five steps"
 					ctas={[{ label: 'Lead generation cycle', href: '#', variant: 'primary' }]}
 				>
