@@ -35,8 +35,9 @@
 	</ContentSection>
 </Container>
 
-<Container class="mt-48">
+<Container class="mt-32">
 	<FeatureRow
+		scrollReveal
 		headline="Built for agencies"
 		ctas={[{ label: 'Discover agency tools', href: '#', variant: 'primary' }]}
 	>
@@ -46,8 +47,9 @@
 	</FeatureRow>
 </Container>
 
-<Container class="mt-48">
+<Container class="mt-64">
 	<FeatureRow
+		scrollReveal
 		side="left"
 		bubbleVariant="light"
 		headline="Only pay for results"
@@ -58,8 +60,9 @@
 	</FeatureRow>
 </Container>
 
-<Container class="mt-48">
+<Container class="mt-64">
 	<FeatureRow
+		scrollReveal
 		headline="A team behind you."
 		ctas={[{ label: 'Meet the team', href: '#', variant: 'primary' }]}
 	>
@@ -67,3 +70,5 @@
 		/><br />Get a head start with a proven process and a team there to support you.
 	</FeatureRow>
 </Container>
+
+<div class="h-[60vh]" aria-hidden="true"></div>

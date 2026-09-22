@@ -14,7 +14,7 @@
 <div class="flex min-h-screen flex-col">
 	<Header>
 		<Container>
-			<LogoTagline />
+			<LogoTagline blurCircles />
 		</Container>
 	</Header>
 	<main class="flex-1">

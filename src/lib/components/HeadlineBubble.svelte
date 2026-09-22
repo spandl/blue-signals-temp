@@ -17,6 +17,12 @@
 		: 'bg-cyan'} {className}"
 >
 	{#if children}
-		<span class="heading-circle px-12">{@render children()}</span>
+		<span class="bubble-headline heading-circle px-12">{@render children()}</span>
 	{/if}
 </div>
+
+<style>
+	.bubble-headline {
+		opacity: var(--bubble-headline-opacity, 1);
+	}
+</style>

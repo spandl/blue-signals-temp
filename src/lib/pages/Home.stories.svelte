@@ -18,7 +18,7 @@
 	{#snippet template()}
 		<Header>
 			<Container>
-				<LogoTagline />
+				<LogoTagline blurCircles />
 			</Container>
 		</Header>
 		<main>
@@ -53,8 +53,9 @@
 					while constantly improving the process and adapting it to your customers.
 				</ContentSection>
 			</Container>
-			<Container class="mt-48">
+			<Container class="mt-32">
 				<FeatureRow
+					scrollReveal
 					headline="Built for agencies"
 					ctas={[{ label: 'Discover agency tools', href: '#', variant: 'primary' }]}
 				>
@@ -63,8 +64,9 @@
 					managed in one place.
 				</FeatureRow>
 			</Container>
-			<Container class="mt-48">
+			<Container class="mt-64">
 				<FeatureRow
+					scrollReveal
 					side="left"
 					bubbleVariant="light"
 					headline="Only pay for results"
@@ -74,8 +76,9 @@
 					for leads, not for seats.
 				</FeatureRow>
 			</Container>
-			<Container class="mt-48">
+			<Container class="mt-64">
 				<FeatureRow
+					scrollReveal
 					headline="A team behind you."
 					ctas={[{ label: 'Meet the team', href: '#', variant: 'primary' }]}
 				>
@@ -84,6 +87,7 @@
 					support you.
 				</FeatureRow>
 			</Container>
+			<div class="h-[60vh]" aria-hidden="true"></div>
 		</main>
 		<Footer />
 	{/snippet}

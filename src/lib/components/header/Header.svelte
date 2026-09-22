@@ -13,7 +13,7 @@
 
 	<button
 		type="button"
-		class="pointer-events-auto absolute top-8 right-8 text-teal"
+		class="pointer-events-auto fixed top-6 right-6 z-50 text-teal md:top-8 md:right-8"
 		aria-label="Open menu"
 	>
 		<span class="block w-10">{@html menuIcon}</span>

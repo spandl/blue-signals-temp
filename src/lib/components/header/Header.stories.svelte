@@ -21,3 +21,13 @@
 		</Header>
 	{/snippet}
 </Story>
+
+<Story name="Figma blur circles">
+	{#snippet template(args)}
+		<Header {...args}>
+			<Container>
+				<LogoTagline blurCircles />
+			</Container>
+		</Header>
+	{/snippet}
+</Story>

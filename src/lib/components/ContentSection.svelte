@@ -111,7 +111,8 @@
 	.scroll-reveal {
 		gap: 1.5rem;
 		margin-top: clamp(12rem, 24vh, 22rem);
-		padding-bottom: clamp(5rem, 14vh, 12rem);
+		margin-bottom: -9vh;
+		padding-bottom: 0;
 	}
 
 	.scroll-reveal.ready .headline {
@@ -150,8 +151,8 @@
 
 	@media (max-width: 767px) {
 		.scroll-reveal {
-			margin-top: clamp(8rem, 18vh, 12rem);
-			padding-bottom: 4rem;
+			margin-top: clamp(14rem, 28vh, 20rem);
+			margin-bottom: -4vh;
 		}
 
 		.scroll-reveal.ready .headline,
@@ -171,6 +172,7 @@
 	@media (prefers-reduced-motion: reduce) {
 		.scroll-reveal {
 			margin-top: 12rem;
+			margin-bottom: 2.25rem;
 			padding-bottom: 0;
 		}
 	}

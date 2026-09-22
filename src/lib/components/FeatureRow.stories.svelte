@@ -10,7 +10,8 @@
 			side: { control: { type: 'select' }, options: ['left', 'right'] },
 			bubbleVariant: { control: { type: 'select' }, options: ['dark', 'light'] },
 			headline: { control: 'text' },
-			ctas: { control: 'object' }
+			ctas: { control: 'object' },
+			scrollReveal: { control: 'boolean' }
 		},
 		args: {
 			side: 'right',
