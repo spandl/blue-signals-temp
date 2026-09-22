@@ -7,6 +7,7 @@
 	import Intro from '$lib/components/Intro.svelte';
 	import ContentSection from '$lib/components/ContentSection.svelte';
 	import FeatureRow from '$lib/components/FeatureRow.svelte';
+	import BookDemoCta from '$lib/components/BookDemoCta.svelte';
 	import metaball from '$lib/assets/metaball-ring.svg';
 
 	const { Story } = defineMeta({
@@ -87,7 +88,9 @@
 					support you.
 				</FeatureRow>
 			</Container>
-			<div class="h-[60vh]" aria-hidden="true"></div>
+			<div class="mt-32">
+				<BookDemoCta href="#" />
+			</div>
 		</main>
 		<Footer />
 	{/snippet}

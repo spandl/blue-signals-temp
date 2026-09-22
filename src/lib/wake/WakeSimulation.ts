@@ -46,7 +46,7 @@ export const DEFAULT_WAKE_SETTINGS: WakeSettings = {
 	halfLife: 151,
 	resolution: 512,
 	mouseCutoff: 40,
-	sourceMargin: 0.25,
+	sourceMargin: 0.35,
 	color: '#009bb5',
 	opacity: 0.29
 };

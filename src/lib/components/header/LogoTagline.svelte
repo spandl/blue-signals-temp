@@ -34,7 +34,7 @@
 		position: absolute;
 		aspect-ratio: 1;
 		border-radius: 50%;
-		background: rgb(255 255 255 / 20%);
+		background: rgb(255 255 255 / 25%);
 		backdrop-filter: blur(3px);
 		-webkit-backdrop-filter: blur(3px);
 	}

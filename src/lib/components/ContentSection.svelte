@@ -14,6 +14,7 @@
 		visual,
 		children,
 		scrollReveal = false,
+		id,
 		class: className = ''
 	}: {
 		headline?: string;
@@ -21,6 +22,7 @@
 		visual?: Snippet;
 		children?: Snippet;
 		scrollReveal?: boolean;
+		id?: string;
 		class?: string;
 	} = $props();
 
@@ -80,6 +82,7 @@
 </script>
 
 <section
+	{id}
 	bind:this={scene}
 	class:scroll-reveal={scrollReveal}
 	class:ready

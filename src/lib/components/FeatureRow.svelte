@@ -16,6 +16,7 @@
 		ctas = [],
 		children,
 		scrollReveal = false,
+		id,
 		class: className = ''
 	}: {
 		/** side the bubble sits on once revealed */
@@ -25,6 +26,7 @@
 		ctas?: Cta[];
 		children?: Snippet;
 		scrollReveal?: boolean;
+		id?: string;
 		class?: string;
 	} = $props();
 
@@ -90,6 +92,7 @@
 </script>
 
 <section
+	{id}
 	bind:this={scene}
 	class:scroll-reveal={scrollReveal}
 	class:ready

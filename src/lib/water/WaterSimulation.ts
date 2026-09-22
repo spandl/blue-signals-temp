@@ -24,16 +24,16 @@ export interface WaterSettings {
 
 /** "Ralph study 02" preset from the exploration prototype. */
 export const DEFAULT_SETTINGS: WaterSettings = {
-	damping: 0.99,
-	dropStrength: 0.35,
+	damping: 0.95,
+	dropStrength: 0.25,
 	dropRadius: 0.01,
-	dropIntervalMin: 1,
+	dropIntervalMin: 2,
 	dropIntervalMax: 7,
 	pointerMode: 'movement',
 	pointerStrength: 0.05,
 	baseTint: 0.04,
-	depthTint: 0.15,
-	waveContrast: 0.75,
+	depthTint: 0.25,
+	waveContrast: 0.8,
 	highlight: 30
 };
 

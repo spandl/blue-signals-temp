@@ -3,6 +3,7 @@
 	import Intro from '$lib/components/Intro.svelte';
 	import ContentSection from '$lib/components/ContentSection.svelte';
 	import FeatureRow from '$lib/components/FeatureRow.svelte';
+	import BookDemoCta from '$lib/components/BookDemoCta.svelte';
 	import metaball from '$lib/assets/metaball-ring.svg';
 </script>
 
@@ -23,6 +24,7 @@
 <Container>
 	<ContentSection
 		scrollReveal
+		id="lead-generation"
 		headline="Generate leads in five steps"
 		ctas={[{ label: 'Lead generation cycle', href: '#', variant: 'primary' }]}
 	>
@@ -38,6 +40,7 @@
 <Container class="mt-32">
 	<FeatureRow
 		scrollReveal
+		id="agency-tools"
 		headline="Built for agencies"
 		ctas={[{ label: 'Discover agency tools', href: '#', variant: 'primary' }]}
 	>
@@ -50,6 +53,7 @@
 <Container class="mt-64">
 	<FeatureRow
 		scrollReveal
+		id="pricing"
 		side="left"
 		bubbleVariant="light"
 		headline="Only pay for results"
@@ -63,6 +67,7 @@
 <Container class="mt-64">
 	<FeatureRow
 		scrollReveal
+		id="onboarding"
 		headline="A team behind you."
 		ctas={[{ label: 'Meet the team', href: '#', variant: 'primary' }]}
 	>
@@ -71,4 +76,6 @@
 	</FeatureRow>
 </Container>
 
-<div class="h-[60vh]" aria-hidden="true"></div>
+<div class="mt-32">
+	<BookDemoCta href="#" />
+</div>

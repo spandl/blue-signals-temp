@@ -6,7 +6,7 @@
 		title: 'Components/Button',
 		component: Button,
 		argTypes: {
-			variant: { control: { type: 'select' }, options: ['primary', 'secondary'] },
+			variant: { control: { type: 'select' }, options: ['primary', 'secondary', 'inverse'] },
 			href: { control: 'text' }
 		},
 		args: { variant: 'primary', href: '#' }
@@ -22,6 +22,14 @@
 <Story name="Secondary" args={{ variant: 'secondary' } as any}>
 	{#snippet template(args)}
 		<Button {...args}>Book a demo</Button>
+	{/snippet}
+</Story>
+
+<Story name="Inverse" args={{ variant: 'inverse' } as any}>
+	{#snippet template(args)}
+		<div class="bg-cyan p-8">
+			<Button {...args}>Book a demo</Button>
+		</div>
 	{/snippet}
 </Story>
 

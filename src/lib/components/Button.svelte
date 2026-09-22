@@ -7,14 +7,18 @@
 		children,
 		class: className = ''
 	}: {
-		variant?: 'primary' | 'secondary';
+		variant?: 'primary' | 'secondary' | 'inverse';
 		href?: string;
 		children?: Snippet;
 		class?: string;
 	} = $props();
 
 	const palette = $derived(
-		variant === 'primary' ? 'bg-cyan text-offwhite' : 'bg-secondary text-teal-deep'
+		variant === 'primary'
+			? 'bg-cyan text-offwhite'
+			: variant === 'secondary'
+				? 'bg-secondary text-teal-deep'
+				: 'bg-offwhite text-teal-deep'
 	);
 </script>
 

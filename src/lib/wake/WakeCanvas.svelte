@@ -20,6 +20,7 @@
 
 	let canvas: HTMLCanvasElement;
 	let sim: WakeSimulation | undefined;
+	let ready = $state(false);
 
 	const filterId = `cyan-wake-${Math.random().toString(36).slice(2, 8)}`;
 
@@ -50,7 +51,17 @@
 	onMount(() => {
 		sim = new WakeSimulation(canvas, current());
 		sim.start();
-		return () => sim?.destroy();
+		let revealFrame = 0;
+		const paintFrame = requestAnimationFrame(() => {
+			revealFrame = requestAnimationFrame(() => {
+				ready = true;
+			});
+		});
+		return () => {
+			cancelAnimationFrame(paintFrame);
+			cancelAnimationFrame(revealFrame);
+			sim?.destroy();
+		};
 	});
 
 	$effect(() => {
@@ -67,6 +78,6 @@
 	bind:this={canvas}
 	class="pointer-events-none {className}"
 	style:filter="url(#{filterId})"
-	style:opacity
+	style:opacity={ready ? opacity : 0}
 	aria-hidden="true"
 ></canvas>
