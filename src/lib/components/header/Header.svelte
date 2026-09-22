@@ -109,7 +109,8 @@
 		transition:
 			top 500ms cubic-bezier(0.22, 1, 0.36, 1),
 			transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
-			opacity 250ms ease;
+			opacity 250ms ease,
+			background-color 500ms ease;
 	}
 
 	.menu-toggle span:nth-child(1) {
@@ -122,6 +123,10 @@
 
 	.menu-toggle span:nth-child(3) {
 		top: 1.75rem;
+	}
+
+	.menu-toggle.open span {
+		background: var(--color-teal-deep);
 	}
 
 	.menu-toggle.open span:nth-child(1),

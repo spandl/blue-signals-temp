@@ -27,7 +27,7 @@
 	} = $props();
 
 	let scene: HTMLElement;
-	let visualMask: HTMLElement;
+	let visualMask = $state<HTMLElement>();
 	let copy: HTMLElement;
 	let ready = $state(false);
 
