@@ -25,7 +25,7 @@
 	<ContentSection
 		scrollReveal
 		id="lead-generation"
-		headline="Generate leads in five steps"
+		headline="From blue signals to warm leads"
 		ctas={[{ label: 'Lead generation cycle', href: '#', variant: 'primary' }]}
 	>
 		{#snippet visual()}
