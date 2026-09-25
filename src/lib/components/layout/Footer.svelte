@@ -2,10 +2,12 @@
 	import Container from './Container.svelte';
 
 	const primaryLinks = [
-		{ label: 'Lead generation', href: '/#lead-generation' },
-		{ label: 'Agency tools', href: '/#agency-tools' },
+		{ label: 'Home', href: '/' },
+		{ label: 'Lead generation', href: '/lead-generation' },
+		{ label: 'Own your leads', href: '/own-your-leads' },
 		{ label: 'Pricing', href: '/#pricing' },
-		{ label: 'Onboarding', href: '/#onboarding' }
+		{ label: 'Built for teams', href: '/built-for-teams' },
+		{ label: 'Team', href: '/team' }
 	];
 	const legalLinks = [
 		{ label: 'Privacy Policy', href: '#' },

@@ -17,13 +17,13 @@
 
 <Story name="Home">
 	{#snippet template()}
-		<Header>
+		<Header class="h-[calc(70vh+6rem)]">
 			<Container>
 				<LogoTagline blurCircles />
 			</Container>
 		</Header>
 		<main>
-			<Container class="mt-48">
+			<Container class="mt-24">
 				<Intro
 					ctas={[
 						{ label: 'Book a demo', href: '#', variant: 'primary' },
@@ -41,7 +41,7 @@
 					scrollReveal
 					id="lead-generation"
 					headline="From blue signals to warm leads"
-					ctas={[{ label: 'Lead generation cycle', href: '#', variant: 'primary' }]}
+					ctas={[{ label: 'Lead generation cycle', href: '/lead-generation', variant: 'primary' }]}
 				>
 					{#snippet visual()}
 						<img
@@ -62,7 +62,7 @@
 					bubbleVariant="light"
 					id="marketing-leads"
 					headline="Own your marketing leads"
-					ctas={[{ label: 'See the benefits', href: '#', variant: 'primary' }]}
+					ctas={[{ label: 'See the benefits', href: '/own-your-leads', variant: 'primary' }]}
 				>
 					With <strong class="brand-name">blueSignals</strong>, the leads you generate are yours
 					to keep. Export them, feed them into your marketing mix, and nurture them in the tools
@@ -76,7 +76,7 @@
 					bubbleVariant="dark"
 					id="agency-tools"
 					headline="Built for teams at scale"
-					ctas={[{ label: 'Explore team features', href: '#', variant: 'primary' }]}
+					ctas={[{ label: 'Explore team features', href: '/built-for-teams', variant: 'primary' }]}
 				>
 					<strong class="brand-name">blueSignals</strong> gives agencies and enterprise teams
 					white-label capabilities, multiple workspaces, quality control tools, and
@@ -102,7 +102,7 @@
 					bubbleVariant="dark"
 					id="onboarding"
 					headline="A team behind you."
-					ctas={[{ label: 'Meet the team', href: '#', variant: 'primary' }]}
+					ctas={[{ label: 'Meet the team', href: '/team', variant: 'primary' }]}
 				>
 					We help you set up your first workspace and configure workflows and outreach
 					campaigns.<br /><br />Get a head start with a proven process and a team there to

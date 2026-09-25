@@ -36,7 +36,7 @@
 
 <Story
 	name="Bubble left (light)"
-	args={{ side: 'left', bubbleVariant: 'light', headline: 'Built for teams at scale', ctas: [{ label: 'Explore team features', href: '#', variant: 'primary' }] } as any}
+	args={{ side: 'left', bubbleVariant: 'light', headline: 'Built for teams at scale', ctas: [{ label: 'Explore team features', href: '/built-for-teams', variant: 'primary' }] } as any}
 >
 	{#snippet template(args)}
 		<Container>
@@ -71,7 +71,7 @@
 		side: 'left',
 		bubbleVariant: 'light',
 		headline: 'Built for teams at scale',
-		ctas: [{ label: 'Explore team features', href: '#', variant: 'primary' }]
+		ctas: [{ label: 'Explore team features', href: '/built-for-teams', variant: 'primary' }]
 	} as any}
 >
 	{#snippet template(args)}
