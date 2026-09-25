@@ -16,8 +16,8 @@
 		args: {
 			side: 'right',
 			bubbleVariant: 'dark',
-			headline: 'Built for agencies',
-			ctas: [{ label: 'Discover agency tools', href: '#', variant: 'primary' }]
+			headline: 'Own your marketing leads',
+			ctas: [{ label: 'See the benefits', href: '#', variant: 'primary' }]
 		}
 	});
 </script>
@@ -26,9 +26,9 @@
 	{#snippet template(args)}
 		<Container>
 			<FeatureRow {...args}>
-				<strong class="brand-name">blue signals</strong> was built for agencies, with
-				white-label capabilities, multiple workspaces, quality control tools, everything
-				managed in one place.
+				With <strong class="brand-name">blueSignals</strong>, the leads you generate are yours to
+				keep. Export them, feed them into your marketing mix, and nurture them in the tools you
+				already use.
 			</FeatureRow>
 		</Container>
 	{/snippet}
@@ -36,13 +36,14 @@
 
 <Story
 	name="Bubble left (light)"
-	args={{ side: 'left', bubbleVariant: 'light', headline: 'Only pay for results', ctas: [{ label: 'See pricing', href: '#', variant: 'primary' }] } as any}
+	args={{ side: 'left', bubbleVariant: 'light', headline: 'Built for teams at scale', ctas: [{ label: 'Explore team features', href: '#', variant: 'primary' }] } as any}
 >
 	{#snippet template(args)}
 		<Container>
 			<FeatureRow {...args}>
-				We want you to succeed. That’s why our pricing is tied to your results: you pay for
-				leads, not for seats.
+				<strong class="brand-name">blueSignals</strong> gives agencies and enterprise teams
+				white-label capabilities, multiple workspaces, quality control tools, and granular
+				access — everything managed in one place.
 			</FeatureRow>
 		</Container>
 	{/snippet}

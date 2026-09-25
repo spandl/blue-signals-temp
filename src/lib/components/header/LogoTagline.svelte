@@ -8,14 +8,14 @@
 	}: { tagline?: string; blurCircles?: boolean; class?: string } = $props();
 </script>
 
-<div class="logo-tagline relative flex w-full max-w-[666px] flex-col items-start gap-6 {className}">
+<div class="logo-tagline relative flex w-full max-w-166.5 flex-col items-start gap-6 {className}">
 	{#if blurCircles}
 		<div class="blur-circles" aria-hidden="true">
 			<div class="blur-circle blur-circle-large"></div>
 			<div class="blur-circle blur-circle-small"></div>
 		</div>
 	{/if}
-	<Logo class="relative z-10 w-full max-w-[601px]" />
+	<Logo class="relative z-10 w-full max-w-150.25" />
 	<p class="heading-byline relative z-10">{tagline}</p>
 </div>
 

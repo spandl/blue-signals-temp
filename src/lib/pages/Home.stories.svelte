@@ -30,39 +30,42 @@
 						{ label: 'Pricing', href: '#', variant: 'secondary' }
 					]}
 				>
-					Professional networks are an ocean of people. Finding qualified leads in that ocean
-					can seem impossible.<br /><br /><strong class="brand-name">blue signals</strong> is
-					a tool, helping you find to people who engage with your content, qualify them, and
-					deliver leads you can act on.
+					Professional networks are an ocean of people. Finding the right people in that
+					ocean can seem impossible.<br /><br /><strong class="brand-name">blueSignals</strong>
+					identifies the people who engage with your content, qualifies them, and delivers
+					top-of-funnel leads you own and can act on.
 				</Intro>
 			</Container>
 			<Container>
 				<ContentSection
 					scrollReveal
-					headline="Generate leads in five steps"
+					id="lead-generation"
+					headline="From blue signals to warm leads"
 					ctas={[{ label: 'Lead generation cycle', href: '#', variant: 'primary' }]}
 				>
 					{#snippet visual()}
 						<img
 							src={metaball}
 							alt="Lead generation cycle"
-							class="w-full max-w-[800px]"
+							class="w-full max-w-200"
 						/>
 					{/snippet}
-					Our lead generation cycle puts quality over quantity.
-					<strong class="brand-name">blue signals</strong> delivers qualified leads to sales
-					while constantly improving the process and adapting it to your customers.
+					Our lead generation cycle focuses on quality over quantity. With
+					<strong class="brand-name">blueSignals</strong>, you can automate a sophisticated
+					qualification process. Find the prospects ready to engage with your brand and keep
+					improving with every cycle.
 				</ContentSection>
 			</Container>
 			<Container class="mt-32">
 				<FeatureRow
 					scrollReveal
-					headline="Built for agencies"
-					ctas={[{ label: 'Discover agency tools', href: '#', variant: 'primary' }]}
+					id="marketing-leads"
+					headline="Own your marketing leads"
+					ctas={[{ label: 'See the benefits', href: '#', variant: 'primary' }]}
 				>
-					<strong class="brand-name">blue signals</strong> was built for agencies, with
-					white-label capabilities, multiple workspaces, quality control tools, everything
-					managed in one place.
+					With <strong class="brand-name">blueSignals</strong>, the leads you generate are yours
+					to keep. Export them, feed them into your marketing mix, and nurture them in the tools
+					you already use.
 				</FeatureRow>
 			</Container>
 			<Container class="mt-64">
@@ -70,16 +73,32 @@
 					scrollReveal
 					side="left"
 					bubbleVariant="light"
+					id="agency-tools"
+					headline="Built for teams at scale"
+					ctas={[{ label: 'Explore team features', href: '#', variant: 'primary' }]}
+				>
+					<strong class="brand-name">blueSignals</strong> gives agencies and enterprise teams
+					white-label capabilities, multiple workspaces, quality control tools, and
+					granular access — everything managed in one place.
+				</FeatureRow>
+			</Container>
+			<Container class="mt-64">
+				<FeatureRow
+					scrollReveal
+					id="pricing"
 					headline="Only pay for results"
 					ctas={[{ label: 'See pricing', href: '#', variant: 'primary' }]}
 				>
-					We want you to succeed. That’s why our pricing is tied to your results: you pay
+					We want you to succeed. That's why our pricing is tied to your results: you pay
 					for leads, not for seats.
 				</FeatureRow>
 			</Container>
 			<Container class="mt-64">
 				<FeatureRow
 					scrollReveal
+					side="left"
+					bubbleVariant="light"
+					id="onboarding"
 					headline="A team behind you."
 					ctas={[{ label: 'Meet the team', href: '#', variant: 'primary' }]}
 				>

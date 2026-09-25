@@ -13,7 +13,7 @@
 			scrollReveal: { control: 'boolean' }
 		},
 		args: {
-			headline: 'Generate leads in five steps',
+			headline: 'From blue signals to warm leads',
 			ctas: [{ label: 'Lead generation cycle', href: '#', variant: 'primary' }]
 		}
 	});
@@ -24,11 +24,12 @@
 		<Container>
 			<ContentSection {...args}>
 				{#snippet visual()}
-					<img src={metaball} alt="Lead generation cycle" class="w-full max-w-[800px]" />
+					<img src={metaball} alt="Lead generation cycle" class="w-full max-w-200" />
 				{/snippet}
-				Our lead generation cycle puts quality over quantity.
-				<strong class="brand-name">blue signals</strong> delivers qualified leads to sales
-				while constantly improving the process and adapting it to your customers.
+				Our lead generation cycle focuses on quality over quantity. With
+				<strong class="brand-name">blueSignals</strong>, you can automate a sophisticated
+				qualification process. Find the prospects ready to engage with your brand and keep
+				improving with every cycle.
 			</ContentSection>
 		</Container>
 	{/snippet}
@@ -40,12 +41,12 @@
 			<ContentSection {...args}>
 				{#snippet visual()}
 					<div
-						class="flex aspect-[16/9] w-full items-center justify-center rounded-2xl bg-gradient-to-br from-cyan/20 to-teal/30 text-teal"
+						class="flex aspect-video w-full items-center justify-center rounded-2xl bg-linear-to-br from-cyan/20 to-teal/30 text-teal"
 					>
 						Media slot — image, video, or canvas
 					</div>
 				{/snippet}
-				Section copy goes here — <strong class="brand-name">blue signals</strong> style.
+				Section copy goes here — <strong class="brand-name">blueSignals</strong> style.
 			</ContentSection>
 		</Container>
 	{/snippet}

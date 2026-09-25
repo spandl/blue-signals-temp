@@ -22,10 +22,10 @@
 	{#snippet template(args)}
 		<Container>
 			<Intro {...args}>
-				Professional networks are an ocean of people. Finding qualified leads in that ocean
-				can seem impossible.<br /><br /><strong class="brand-name">blue signals</strong> is a
-				tool, helping you find to people who engage with your content, qualify them, and
-				deliver leads you can act on.
+				Professional networks are an ocean of people. Finding the right people in that ocean
+				can seem impossible.<br /><br /><strong class="brand-name">blueSignals</strong>
+				identifies the people who engage with your content, qualifies them, and delivers
+				top-of-funnel leads you own and can act on.
 			</Intro>
 		</Container>
 	{/snippet}
@@ -35,9 +35,10 @@
 	{#snippet template(args)}
 		<Container>
 			<Intro {...args}>
-				Our lead generation cycle puts quality over quantity.
-				<strong class="brand-name">blue signals</strong> delivers qualified leads to sales
-				while constantly improving the process and adapting it to your customers.
+				Professional networks are an ocean of people. Finding the right people in that ocean
+				can seem impossible.<br /><br /><strong class="brand-name">blueSignals</strong>
+				identifies the people who engage with your content, qualifies them, and delivers
+				top-of-funnel leads you own and can act on.
 			</Intro>
 		</Container>
 	{/snippet}
@@ -47,7 +48,7 @@
 	{#snippet template(args)}
 		<Container>
 			<Intro {...args}>
-				We want you to succeed. That’s why our pricing is tied to your results: you pay for
+				We want you to succeed. That's why our pricing is tied to your results: you pay for
 				leads, not for seats.
 			</Intro>
 		</Container>

@@ -99,7 +99,7 @@
 	class="feature-row flex items-center gap-24 {side === 'left' ? 'flex-row-reverse' : ''} {className}"
 >
 	<!-- copy column: revealed when the bubble slides aside -->
-	<div class="copy flex max-w-[567px] flex-1 flex-col gap-11">
+	<div class="copy flex max-w-141.75 flex-1 flex-col gap-11">
 		{#if children}
 			<p class="paragraph-normal">{@render children()}</p>
 		{/if}
@@ -112,7 +112,7 @@
 		{/if}
 	</div>
 	<!-- bubble wrapper: transform target for the scroll-in animation -->
-	<div bind:this={bubble} class="bubble w-[478px] shrink-0">
+	<div bind:this={bubble} class="bubble w-119.5 shrink-0">
 		<HeadlineBubble variant={bubbleVariant}>{headline}</HeadlineBubble>
 	</div>
 </section>

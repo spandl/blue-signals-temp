@@ -40,14 +40,14 @@
 {#if href}
 	<a
 		{href}
-		class="text-cta inline-flex h-14 items-center gap-4 rounded-xl px-6 {palette} transition-[translate,box-shadow] duration-[400ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:shadow-[0_6px_16px_rgba(0,0,0,0.15)] {className}"
+		class="text-cta inline-flex h-14 items-center gap-4 rounded-xl px-6 {palette} transition-[transform,box-shadow] duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:shadow-[0_6px_16px_rgba(0,0,0,0.15)] {className}"
 	>
 		{@render arrow()}
 		{#if children}{@render children()}{/if}
 	</a>
 {:else}
 	<button
-		class="text-cta inline-flex h-14 cursor-pointer items-center gap-4 rounded-xl px-6 {palette} transition-[translate,box-shadow] duration-[400ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:shadow-[0_6px_16px_rgba(0,0,0,0.15)] {className}"
+		class="text-cta inline-flex h-14 cursor-pointer items-center gap-4 rounded-xl px-6 {palette} transition-[transform,box-shadow] duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:shadow-[0_6px_16px_rgba(0,0,0,0.15)] {className}"
 	>
 		{@render arrow()}
 		{#if children}{@render children()}{/if}

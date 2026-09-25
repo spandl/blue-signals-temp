@@ -43,7 +43,7 @@
 		<span></span>
 </button>
 
-<header class="relative h-[70vh] max-h-[960px] min-h-[420px] w-full overflow-hidden">
+<header class="relative h-[70vh] max-h-240 min-h-105 w-full overflow-hidden">
 	<WaterCanvas class="absolute inset-0 h-full w-full" />
 	<WakeCanvas class="absolute inset-0 h-full w-full" />
 
