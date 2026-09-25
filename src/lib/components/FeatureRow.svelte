@@ -32,6 +32,7 @@
 
 	let scene: HTMLElement;
 	let bubble: HTMLElement;
+	let copy: HTMLElement;
 	let ready = $state(false);
 
 	const phase = (progress: number, start: number, end: number) =>
@@ -40,7 +41,7 @@
 		progress * progress * progress * (progress * (progress * 6 - 15) + 10);
 
 	onMount(() => {
-		if (!scrollReveal || !scene || !bubble) return;
+		if (!scrollReveal || !scene || !bubble || !copy) return;
 
 		const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 		const sceneBounds = scene.getBoundingClientRect();
@@ -60,13 +61,28 @@
 			const progress = Math.min(1, Math.max(0, (revealStart - bounds.top) / (window.innerHeight * 0.82)));
 			const finalCenter = bubble.offsetLeft - scene.offsetLeft + bubble.offsetWidth / 2;
 			const oppositeSideShift = scene.clientWidth - 2 * finalCenter;
-			const slideProgress = phase(progress, 0.44, 0.82);
-			scene.style.setProperty('--bubble-grow', String(phase(progress, 0, 0.34)));
+			const slideProgress = phase(progress, 0.24, 0.55);
+			const bubbleSlide = easeInOut(slideProgress);
+			const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
+			scene.style.setProperty('--bubble-grow', String(phase(progress, 0, 0.22)));
 			scene.style.setProperty('--bubble-start-scale', String(32 / bubble.offsetWidth));
-			scene.style.setProperty('--headline-fade', String(phase(progress, 0.34, 0.44)));
-			scene.style.setProperty('--bubble-slide', String(easeInOut(slideProgress)));
-			scene.style.setProperty('--copy-reveal', String(phase(progress, 0.56, 0.82)));
+			scene.style.setProperty('--headline-fade', String(phase(progress, 0.18, 0.24)));
+			scene.style.setProperty('--bubble-slide', String(bubbleSlide));
 			scene.style.setProperty('--bubble-center-shift', `${oppositeSideShift}px`);
+
+			if (isDesktop) {
+				const bubbleCenterX = finalCenter + oppositeSideShift * (1 - bubbleSlide);
+				const copyLeft = copy.offsetLeft - scene.offsetLeft;
+				const copyRight = copyLeft + copy.offsetWidth;
+				const copyReveal =
+					side === 'right'
+						? Math.min(1, Math.max(0, (bubbleCenterX - copyLeft) / copy.offsetWidth))
+						: Math.min(1, Math.max(0, (copyRight - bubbleCenterX) / copy.offsetWidth));
+				scene.style.setProperty('--copy-reveal', String(copyReveal));
+				scene.style.setProperty('--copy-opacity', String(phase(bubbleSlide, 0, 0.15)));
+			} else {
+				scene.style.setProperty('--copy-reveal', String(phase(progress, 0.30, 0.55)));
+			}
 			ready = true;
 		};
 
@@ -99,7 +115,7 @@
 	class="feature-row flex items-center gap-24 {side === 'left' ? 'flex-row-reverse' : ''} {className}"
 >
 	<!-- copy column: revealed when the bubble slides aside -->
-	<div class="copy flex max-w-141.75 flex-1 flex-col gap-11">
+	<div bind:this={copy} class="copy flex max-w-141.75 flex-1 flex-col gap-11">
 		{#if children}
 			<p class="paragraph-normal">{@render children()}</p>
 		{/if}
@@ -132,12 +148,31 @@
 
 	.scroll-reveal.ready .copy {
 		opacity: var(--copy-reveal);
-		transform: translate3d(calc((1 - var(--copy-reveal)) * var(--bubble-center-shift) * -0.12), 0, 0);
+		transform: translate3d(0, calc((1 - var(--copy-reveal)) * 3rem), 0);
+	}
+
+	@media (min-width: 1024px) {
+		.scroll-reveal.ready .bubble {
+			position: relative;
+			z-index: 2;
+		}
+
+		.scroll-reveal.ready .copy {
+			position: relative;
+			z-index: 1;
+			opacity: var(--copy-opacity);
+			background-color: #ffffff;
+			clip-path: inset(0 calc(100% * (1 - var(--copy-reveal))) 0 0);
+		}
+
+		.scroll-reveal.ready.flex-row-reverse .copy {
+			clip-path: inset(0 0 0 calc(100% * (1 - var(--copy-reveal))));
+		}
 	}
 
 	.bubble,
 	.copy {
-		will-change: transform;
+		will-change: transform, clip-path;
 	}
 
 	@media (max-width: 1023px) {

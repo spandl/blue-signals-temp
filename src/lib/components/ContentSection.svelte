@@ -86,7 +86,7 @@
 	bind:this={scene}
 	class:scroll-reveal={scrollReveal}
 	class:ready
-	class="content-section my-9 flex flex-col items-center gap-18.8 text-center {className}"
+	class="content-section my-9 flex flex-col items-center gap-[4.7rem] text-center {className}"
 >
 	{#if headline}
 		<h2 class="headline heading-h2">{headline}</h2>
@@ -96,7 +96,7 @@
 			<div class="visual">{@render visual()}</div>
 		</div>
 	{/if}
-	<div bind:this={copy} class="copy flex flex-col items-center gap-18.8">
+	<div bind:this={copy} class="copy flex flex-col items-center gap-[4.7rem]">
 		{#if children}
 			<p class="paragraph-normal text-teal-deep">{@render children()}</p>
 		{/if}
@@ -115,6 +115,7 @@
 		gap: 1.5rem;
 		margin-top: clamp(12rem, 24vh, 22rem);
 		margin-bottom: -9vh;
+		padding-top: 9rem;
 		padding-bottom: 0;
 	}
 

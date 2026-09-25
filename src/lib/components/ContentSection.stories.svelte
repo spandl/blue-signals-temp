@@ -35,6 +35,30 @@
 	{/snippet}
 </Story>
 
+<Story name="Scroll reveal">
+	{#snippet template(args)}
+		<div class="flex h-[120vh] flex-col items-center pt-20">
+			<p class="text-muted">Scroll down to see the reveal</p>
+		</div>
+		<Container>
+			<ContentSection {...args} scrollReveal>
+				{#snippet visual()}
+					<img
+						src={metaball}
+						alt="Lead generation cycle"
+						class="w-full max-w-200"
+					/>
+				{/snippet}
+				Our lead generation cycle focuses on quality over quantity. With
+				<strong class="brand-name">blueSignals</strong>, you can automate a sophisticated
+				qualification process. Find the prospects ready to engage with your brand and keep
+				improving with every cycle.
+			</ContentSection>
+		</Container>
+		<div class="h-[120vh]"></div>
+	{/snippet}
+</Story>
+
 <Story name="Two CTAs" args={{ ctas: [{ label: 'Book a demo', href: '#', variant: 'primary' }, { label: 'Learn more', href: '#', variant: 'secondary' }] } as any}>
 	{#snippet template(args)}
 		<Container>

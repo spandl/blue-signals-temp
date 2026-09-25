@@ -59,6 +59,7 @@
 			<Container class="mt-32">
 				<FeatureRow
 					scrollReveal
+					bubbleVariant="light"
 					id="marketing-leads"
 					headline="Own your marketing leads"
 					ctas={[{ label: 'See the benefits', href: '#', variant: 'primary' }]}
@@ -72,7 +73,7 @@
 				<FeatureRow
 					scrollReveal
 					side="left"
-					bubbleVariant="light"
+					bubbleVariant="dark"
 					id="agency-tools"
 					headline="Built for teams at scale"
 					ctas={[{ label: 'Explore team features', href: '#', variant: 'primary' }]}
@@ -85,6 +86,7 @@
 			<Container class="mt-64">
 				<FeatureRow
 					scrollReveal
+					bubbleVariant="light"
 					id="pricing"
 					headline="Only pay for results"
 					ctas={[{ label: 'See pricing', href: '#', variant: 'primary' }]}
@@ -97,7 +99,7 @@
 				<FeatureRow
 					scrollReveal
 					side="left"
-					bubbleVariant="light"
+					bubbleVariant="dark"
 					id="onboarding"
 					headline="A team behind you."
 					ctas={[{ label: 'Meet the team', href: '#', variant: 'primary' }]}
